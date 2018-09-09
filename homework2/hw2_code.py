@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env 
 
 import numpy as np, cv2, os, time
 
