@@ -258,7 +258,6 @@ def mapImages( sourceImg=None, targetImg=None, pqrs=None, H=None ):
     # before mapping.
     targetImg = cv2.fillPoly( targetImg, np.array( [ pqrs ] ), (0,0,0) )
     
-    targetH, targetW = targetImg.shape[0], targetImg.shape[1]
     sourceH, sourceW = sourceImg.shape[0], sourceImg.shape[1]
     
     processingTime = time.time()
