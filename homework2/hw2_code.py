@@ -8,6 +8,9 @@ import numpy as np, cv2, os, time
 # ECE 661 FALL 2018, HW 2
 #===============================================================================
 
+#===============================================================================
+# FUNCTIONS CREATED IN HW2.
+#===============================================================================
 
 # Global variables that will mark the points in the image by mouse click.
 ix, iy = -1, -1
@@ -49,7 +52,7 @@ def selectPts( filePath=None ):
         h1, resized = 480, True
         hRatio = h / h1
 
-    if resized:     img1 = cv2.resize( img, (w1, h1), \
+    if resized:     img = cv2.resize( img, (w1, h1), \
                                         interpolation=cv2.INTER_AREA )
 
     cv2.namedWindow( 'Image' )
@@ -62,11 +65,11 @@ def selectPts( filePath=None ):
     
     while key & 0xFF != 27:         # Press esc to break.
 
-        imgTemp = np.array( img1 )      # Temporary image.
+        imgTemp = np.array( img )      # Temporary image.
 
         # Displaying all the points in listOfPts on the image.
         for i in range( len(listOfPts) ):
-            cv2.circle( imgTemp, listOfPts[i], 3, (0, 255, 0), -1 )
+            cv2.circle( imgTemp, tuple(listOfPts[i]), 3, (0, 255, 0), -1 )
             
         # After clicking on the image, press any key (other than esc) to display
         # the point on the image.
@@ -82,7 +85,7 @@ def selectPts( filePath=None ):
         
         # If 's' is pressed then the point is saved to the listOfPts.
         if key == ord('s'):
-            listOfPts.append( (ix, iy) )
+            listOfPts.append( [ix, iy] )
             cv2.circle( imgTemp, (ix, iy), 3, (0, 255, 0), -1 )
             img1 = imgTemp
             ix, iy = -1, -1
@@ -345,10 +348,6 @@ if __name__ == '__main__':
 
     # Implanting the target into figs.
     
-    # NOTE:
-    # The target image is the image to be mapped into the source image.
-    # This is the way the nomenclature is defined in this code.
-
     # Reading the images.
     sourceImg = cv2.imread( os.path.join( filePath, faceFileName ) )
     targetImg = cv2.imread( os.path.join( filePath, filename1 ) )
@@ -393,10 +392,6 @@ if __name__ == '__main__':
     # TASK 1b.
     
     # Applying the product of H from 1 to 2 and H from 2 to 3 to the fig1.
-    
-    # NOTE:
-    # The target image is the image to be mapped into the source image.
-    # This is the way the nomenclature is defined in this code.
 
     Hbetw2To1 = homography( srcPts=pqrsHomFmt2, dstPts=pqrsHomFmt1 )
     Hbetw3To2 = homography( srcPts=pqrsHomFmt3, dstPts=pqrsHomFmt2 )
@@ -473,7 +468,7 @@ if __name__ == '__main__':
     
 #-------------------------------------------------------------------------------
 
-    Finding the homography.
+    # Finding the homography.
     
     # Homography between target and fig1.
     Hbetw1ToFace = homography( srcPts=pqrsHomFmt1, dstPts=pqrsHomFmtF )
@@ -492,12 +487,8 @@ if __name__ == '__main__':
 
 #-------------------------------------------------------------------------------
 
-    Implanting the target into figs.
+    # Implanting the target into figs.
     
-    # NOTE:
-    # The target image is the image to be mapped into the source image.
-    # This is the way the nomenclature is defined in this code.
-
     # Reading the images.
     sourceImg = cv2.imread( os.path.join( filePath, faceFileName ) )
     targetImg = cv2.imread( os.path.join( filePath, filename1 ) )
@@ -541,10 +532,6 @@ if __name__ == '__main__':
 
     # Applying the product of H from 1 to 2 and H from 2 to 3 to the fig1.
     
-    # NOTE:
-    # The target image is the image to be mapped into the source image.
-    # This is the way the nomenclature is defined in this code.
-
     Hbetw2To1 = homography( srcPts=pqrsHomFmt2, dstPts=pqrsHomFmt1 )
     Hbetw3To2 = homography( srcPts=pqrsHomFmt3, dstPts=pqrsHomFmt2 )
     
