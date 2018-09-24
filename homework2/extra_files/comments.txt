@@ -1,0 +1,35 @@
+Mapping fig 1d to 1a took 54.189120292663574 sec.
+Mapping fig 1d to 1b took 58.796043157577515 sec.
+Mapping fig 1d to 1c took 70.05593848228455 sec.
+
+But it also depends on the other applications running on the cpu.
+
+H by direct homography calculation: 
+[[ 5.55999200e+00 -1.32473359e-02 -1.82877701e+03]
+ [ 2.22105821e+00  3.26714232e+00 -4.10278206e+03]
+ [ 1.31453230e-03 -3.36940293e-05  1.00000000e+00]]
+
+H by product of to homographies (applied to image): 
+[[ 4.96250858e+00 -1.18237613e-02 -1.63225444e+03]
+ [ 1.98238062e+00  2.91605128e+00 -3.66189217e+03]
+ [ 1.17327108e-03 -3.00732284e-05  8.92538798e-01]]
+
+Mapping fig 1f to 1a took 30.42695903778076 sec.
+Mapping fig 1f to 1b took 38.70516586303711 sec.
+Mapping fig 1f to 1c took 18.697148084640503 sec.
+
+The images in the task 2 are smaller. So the overall processing is faster.
+
+H by direct homography calculation: 
+[[ 9.26986355e+00  9.49330929e-01 -6.19331143e+03]
+ [-2.10805488e+00  3.70644260e+00  2.02868462e+03]
+ [ 1.95536761e-03  1.24712952e-04  1.00000000e+00]]
+H by product of to homographies (applied to image): 
+[[ 1.14834654e+01  1.17602690e+00 -7.67224643e+03]
+ [-2.61144893e+00  4.59152448e+00  2.51312541e+03]
+ [ 2.42230063e-03  1.54493845e-04  1.23879552e+00]]
+ 
+
+
+
+    
