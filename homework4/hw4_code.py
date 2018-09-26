@@ -472,7 +472,7 @@ if __name__ == '__main__':
     print( f'Number of corners found in image2: {len(listOfCorners2)}' )
     
     mode = 'SSD'
-    matchThresh = 2200
+    matchThresh = 12000
     matchedPairs1To2, goodMatches1to2, distValue = findGoodMatches( img1, listOfCorners1, \
                                                          img2, listOfCorners2, \
                                                          kernel=21, mode=mode, \
