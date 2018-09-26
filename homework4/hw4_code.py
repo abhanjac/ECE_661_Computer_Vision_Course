@@ -512,7 +512,7 @@ if __name__ == '__main__':
     kp1, des1 = sift.detectAndCompute( img1gray, None )
     kp2, des2 = sift.detectAndCompute( img2gray, None )
     
-    matchThresh = 200
+    matchThresh = 50
     
     matchedPairs1To2, goodMatches1to2, distValue = distanceSift( kp1, des1, kp2, des2, \
                                                                  matchThresh=matchThresh)
