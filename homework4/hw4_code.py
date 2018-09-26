@@ -501,42 +501,6 @@ if __name__ == '__main__':
 
 #-------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------
-    
-    sigma = 1     # Scale.
-    listOfCorners1 = calculateHarrisCorners( img1, sigma=sigma )
-    print( f'Number of corners found in image1: {len(listOfCorners1)}' )
-    listOfCorners2 = calculateHarrisCorners( img2, sigma=sigma )
-    print( f'Number of corners found in image2: {len(listOfCorners2)}' )
-    
-    mode = 'SSD'
-    matchThresh = 2200
-    matchedPairs1To2, goodMatches1to2, distValue = findGoodMatches( img1, listOfCorners1, \
-                                                         img2, listOfCorners2, \
-                                                         kernel=21, mode=mode, \
-                                                         matchThresh=matchThresh )
-
-    print( f'Number of good matches for {mode}: {len(goodMatches1to2)} out of ' \
-           f'{len(matchedPairs1To2)} total matches (with threshold: {matchThresh}).' )
-    
-    #print(distValue)
-
-    img = np.hstack( ( img1, img2 ) )
-    for idx, i in enumerate( goodMatches1to2 ):
-        pt1 = i[0]
-        pt2 = [ i[1][0] + imgW, i[1][1] ]
-        cv2.line( img, tuple(pt1), tuple(pt2), (0,255,255), 1 )
-        
-        cv2.circle( img, tuple(pt1), 2, (0,255,0), -1 )
-        cv2.circle( img, tuple(pt1), 3, (0,0,255), 1 )
-        
-        cv2.circle( img, tuple(pt2), 2, (0,255,0), -1 )
-        cv2.circle( img, tuple(pt2), 3, (0,0,255), 1 )
-
-    #cv2.imshow( 'Matches', img )
-    #cv2.waitKey(0)
-    cv2.imwrite( './img4_ssd_sigma2.png', img )
-
-#-------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------
     
     sigma = 1.414     # Scale.
