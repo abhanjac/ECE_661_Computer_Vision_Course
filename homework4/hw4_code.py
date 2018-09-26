@@ -437,8 +437,8 @@ if __name__ == '__main__':
     
     # Finding matching harris corners in image1 and image2.
 
-    filepath = './PicsSelf'
-    subfolder1 = 'pair2'
+    filepath = './HW4Pics'
+    subfolder1 = 'pair1'
     filename1, filename2 = '1.jpg', '2.jpg'
 
     img1 = cv2.imread( os.path.join( filepath, subfolder1, filename1 ) )
