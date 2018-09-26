@@ -499,43 +499,43 @@ if __name__ == '__main__':
     #cv2.waitKey(0)
     cv2.imwrite( './img4_ssd_sigma1.png', img )
 
-###===============================================================================
+#===============================================================================
 
-    ## TASK 2.2
+    # TASK 2.2
     
-    ## Finding matching sift keypoints in image1 and image2.
+    # Finding matching sift keypoints in image1 and image2.
 
-    #img1gray = cv2.cvtColor( img1, cv2.COLOR_BGR2GRAY )
-    #img2gray = cv2.cvtColor( img2, cv2.COLOR_BGR2GRAY )
+    img1gray = cv2.cvtColor( img1, cv2.COLOR_BGR2GRAY )
+    img2gray = cv2.cvtColor( img2, cv2.COLOR_BGR2GRAY )
     
-    #sift = cv2.xfeatures2d.SIFT_create()       # Initiate sift detector.
-    #kp1, des1 = sift.detectAndCompute( img1gray, None )
-    #kp2, des2 = sift.detectAndCompute( img2gray, None )
+    sift = cv2.xfeatures2d.SIFT_create()       # Initiate sift detector.
+    kp1, des1 = sift.detectAndCompute( img1gray, None )
+    kp2, des2 = sift.detectAndCompute( img2gray, None )
     
-    #matchThresh = 200
+    matchThresh = 200
     
-    #matchedPairs1To2, goodMatches1to2, distValue = distanceSift( kp1, des1, kp2, des2, \
-                                                                 #matchThresh=matchThresh)
+    matchedPairs1To2, goodMatches1to2, distValue = distanceSift( kp1, des1, kp2, des2, \
+                                                                 matchThresh=matchThresh)
     
-    #print( f'Number of good matches for Sift: {len(goodMatches1to2)} out of ' \
-       #f'{len(matchedPairs1To2)} total matches (with threshold: {matchThresh}).' )
+    print( f'Number of good matches for Sift: {len(goodMatches1to2)} out of ' \
+       f'{len(matchedPairs1To2)} total matches (with threshold: {matchThresh}).' )
 
-    ##print(distValue)
+    #print(distValue)
 
-    #img = np.hstack( ( img1, img2 ) )
-    #for idx, i in enumerate( goodMatches1to2 ):
-        #pt1 = i[0]
-        #pt2 = [ i[1][0] + imgW, i[1][1] ]
-        #cv2.line( img, tuple(pt1), tuple(pt2), (255,0,255), 1 )
+    img = np.hstack( ( img1, img2 ) )
+    for idx, i in enumerate( goodMatches1to2 ):
+        pt1 = i[0]
+        pt2 = [ i[1][0] + imgW, i[1][1] ]
+        cv2.line( img, tuple(pt1), tuple(pt2), (255,0,255), 1 )
         
-        #cv2.circle( img, tuple(pt1), 2, (0,255,0), -1 )
-        #cv2.circle( img, tuple(pt1), 3, (0,0,255), 1 )
+        cv2.circle( img, tuple(pt1), 2, (0,255,0), -1 )
+        cv2.circle( img, tuple(pt1), 3, (0,0,255), 1 )
         
-        #cv2.circle( img, tuple(pt2), 2, (0,255,0), -1 )
-        #cv2.circle( img, tuple(pt2), 3, (0,0,255), 1 )
+        cv2.circle( img, tuple(pt2), 2, (0,255,0), -1 )
+        cv2.circle( img, tuple(pt2), 3, (0,0,255), 1 )
 
-    #cv2.imshow( 'Matches', img )
-    #cv2.waitKey(0)
+    cv2.imshow( 'Matches', img )
+    cv2.waitKey(0)
 
 
 
