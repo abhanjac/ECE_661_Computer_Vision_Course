@@ -1,54 +1,200 @@
 Harris corners:
 
-Image1:
-
-k: 0.11946525479770467
-Number of corners found in image1: 286
-k: 0.11891256596156237
-Number of corners found in image2: 282
-
-k: 0.08382305600949559
-Number of corners found in image1: 262
-k: 0.08281496185930964
-Number of corners found in image2: 266
-
-k: 0.10266369076917475
-Number of corners found in image1: 253
-k: 0.10124738976802594
-Number of corners found in image2: 249
-
-k: 0.0950385933335263
-Number of corners found in image1: 217
-k: 0.09356549232550747
-Number of corners found in image2: 219
+Image pair 1:
 
 SSD:
-sigma0 = 0.5
-Number of good matches for SSD: 78 out of 282 total matches (with threshold: 12000).
-
 sigma1 = 0.707
-Number of good matches for SSD: 98 out of 262 total matches (with threshold: 12000).
+k: 0.08382305600949559      Number of corners found in image1: 260
+k: 0.08281496185930964      Number of corners found in image2: 266
+Number of good matches for SSD: 96 out of 260 total matches (with threshold: 12000).
 
 sigma2 = 1
-Number of good matches for SSD: 79 out of 249 total matches (with threshold: 12000).
+k: 0.10266369076917475      Number of corners found in image1: 253
+k: 0.10124738976802594      Number of corners found in image2: 247
+Number of good matches for SSD: 78 out of 247 total matches (with threshold: 12000).
 
 sigma3 = 1.414
-Number of good matches for SSD: 71 out of 217 total matches (with threshold: 12000).
+k: 0.0950385933335263       Number of corners found in image1: 214
+k: 0.09356549232550747      Number of corners found in image2: 217
+Number of good matches for SSD: 70 out of 214 total matches (with threshold: 12000).
 
+sigma4 = 2
+k: 0.10115842567967347      Number of corners found in image1: 205
+k: 0.09936417184485144      Number of corners found in image2: 204
+Number of good matches for SSD: 71 out of 204 total matches (with threshold: 12000).
 
 NCC:
-sigma0 = 0.5
-Number of good matches for NCC: 75 out of 282 total matches (with threshold: 0.96).
-
 sigma1 = 0.707
-Number of good matches for NCC: 103 out of 262 total matches (with threshold: 0.96).
+k: 0.08382305600949559      Number of corners found in image1: 260
+k: 0.08281496185930964      Number of corners found in image2: 266
+Number of good matches for NCC: 102 out of 260 total matches (with threshold: 0.96).
 
 sigma2 = 1
-Number of good matches for NCC: 90 out of 249 total matches (with threshold: 0.96).
+k: 0.10266369076917475      Number of corners found in image1: 253
+k: 0.10124738976802594      Number of corners found in image2: 247
+Number of good matches for NCC: 89 out of 247 total matches (with threshold: 0.96).
 
 sigma3 = 1.414
-Number of good matches for NCC: 100 out of 217 total matches (with threshold: 0.96).
+k: 0.0950385933335263       Number of corners found in image1: 214
+k: 0.09356549232550747      Number of corners found in image2: 217
+Number of good matches for NCC: 99 out of 214 total matches (with threshold: 0.96).
 
+sigma4 = 2
+k: 0.10115842567967347      Number of corners found in image1: 205
+k: 0.09936417184485144      Number of corners found in image2: 204
+Number of good matches for NCC: 95 out of 204 total matches (with threshold: 0.96).
 
 SIFT:
 Number of good matches for Sift: 276 out of 961 total matches (with threshold: 50).
+
+
+Image pair 2:
+
+SSD:
+sigma1 = 0.707
+k: 0.10595806934242813      Number of corners found in image1: 240
+k: 0.11209340930717443      Number of corners found in image2: 255
+Number of good matches for SSD: 44 out of 240 total matches (with threshold: 25000).
+
+sigma2 = 1
+k: 0.13082650331051543      Number of corners found in image1: 221
+k: 0.13870057817121453      Number of corners found in image2: 229
+Number of good matches for SSD: 49 out of 221 total matches (with threshold: 25000).
+
+sigma3 = 1.414
+k: 0.12198397144061084      Number of corners found in image1: 207
+k: 0.12833416232212816      Number of corners found in image2: 206
+Number of good matches for SSD: 33 out of 206 total matches (with threshold: 25000).
+
+sigma4 = 2
+k: 0.12162683491799463      Number of corners found in image1: 180
+k: 0.12894373261428513      Number of corners found in image2: 171
+Number of good matches for SSD: 26 out of 171 total matches (with threshold: 25000).
+
+NCC:
+sigma1 = 0.707
+k: 0.10595806934242813      Number of corners found in image1: 240
+k: 0.11209340930717443      Number of corners found in image2: 255
+Number of good matches for NCC: 47 out of 240 total matches (with threshold: 0.82).
+
+sigma2 = 1
+k: 0.13082650331051543      Number of corners found in image1: 221
+k: 0.13870057817121453      Number of corners found in image2: 229
+Number of good matches for NCC: 46 out of 221 total matches (with threshold: 0.82).
+
+sigma3 = 1.414
+k: 0.12198397144061084      Number of corners found in image1: 207
+k: 0.12833416232212816      Number of corners found in image2: 206
+Number of good matches for NCC: 43 out of 206 total matches (with threshold: 0.82).
+
+sigma4 = 2
+k: 0.12162683491799463      Number of corners found in image1: 180
+k: 0.12894373261428513      Number of corners found in image2: 171
+Number of good matches for NCC: 22 out of 171 total matches (with threshold: 0.82).
+
+SIFT
+Number of good matches for Sift: 123 out of 991 total matches (with threshold: 125).
+
+
+Image pair 3 self:
+
+SSD:
+sigma0 = 0.5
+k: 0.09838655013258095      Number of corners found in image1: 276
+k: 0.11273171039895905      Number of corners found in image2: 233
+Number of good matches for SSD: 59 out of 233 total matches (with threshold: 13000).
+
+sigma1 = 0.707
+k: 0.08264139189372678      Number of corners found in image1: 275
+k: 0.0844075559809259       Number of corners found in image2: 240
+Number of good matches for SSD: 73 out of 240 total matches (with threshold: 13000).
+
+sigma2 = 1
+k: 0.11297229210403835      Number of corners found in image1: 256
+k: 0.10673371208549286      Number of corners found in image2: 215
+Number of good matches for SSD: 58 out of 215 total matches (with threshold: 13000).
+
+sigma3 = 1.414
+k: 0.11179919263346233      Number of corners found in image1: 226
+k: 0.09453739545986739      Number of corners found in image2: 201
+Number of good matches for SSD: 53 out of 201 total matches (with threshold: 13000).
+
+sigma4 = 2
+k: 0.10739689210345311      Number of corners found in image1: 196
+k: 0.0881379214533294       Number of corners found in image2: 159
+Number of good matches for SSD: 39 out of 159 total matches (with threshold: 13000).
+
+NCC:
+
+sigma0 = 0.5
+k: 0.09838655013258095      Number of corners found in image1: 276
+k: 0.11273171039895905      Number of corners found in image2: 233
+Number of good matches for NCC: 38 out of 233 total matches (with threshold: 0.85).
+
+sigma1 = 0.707
+k: 0.08264139189372678      Number of corners found in image1: 275
+k: 0.0844075559809259       Number of corners found in image2: 240
+Number of good matches for NCC: 55 out of 240 total matches (with threshold: 0.85).
+
+sigma2 = 1
+k: 0.11297229210403835      Number of corners found in image1: 256
+k: 0.10673371208549286      Number of corners found in image2: 215
+Number of good matches for NCC: 45 out of 215 total matches (with threshold: 0.85).
+
+sigma3 = 1.414
+k: 0.11179919263346233      Number of corners found in image1: 226
+k: 0.09453739545986739      Number of corners found in image2: 201
+Number of good matches for NCC: 36 out of 201 total matches (with threshold: 0.85).
+
+sigma4 = 2
+k: 0.10739689210345311      Number of corners found in image1: 196
+k: 0.0881379214533294       Number of corners found in image2: 159
+Number of good matches for NCC: 14 out of 159 total matches (with threshold: 0.85).
+
+SIFT:
+Number of good matches for Sift: 54 out of 184 total matches (with threshold: 250).
+
+
+Image pair 4 self:
+
+SSD:
+sigma0 = 0.5
+
+sigma1 = 0.707
+
+sigma2 = 1
+
+sigma3 = 1.414
+
+sigma4 = 2
+
+NCC:
+sigma0 = 0.5
+k: 0.12884869127303486      Number of corners found in image1: 248
+k: 0.12835310120268306      Number of corners found in image2: 238
+Number of good matches for NCC: 29 out of 238 total matches (with threshold: 0.91).
+
+sigma1 = 0.707
+k: 0.09422918562673138      Number of corners found in image1: 230
+k: 0.09497189428362467      Number of corners found in image2: 232
+Number of good matches for NCC: 56 out of 230 total matches (with threshold: 0.85).
+
+sigma2 = 1
+k: 0.12149005191298874      Number of corners found in image1: 224
+k: 0.12074616893454024      Number of corners found in image2: 215
+Number of good matches for NCC: 63 out of 215 total matches (with threshold: 0.85).
+
+sigma3 = 1.414
+k: 0.10585178382500617      Number of corners found in image1: 210
+k: 0.10291908959480371      Number of corners found in image2: 203
+Number of good matches for NCC: 56 out of 203 total matches (with threshold: 0.85).
+
+sigma4 = 2
+k: 0.09649005832800127      Number of corners found in image1: 158
+k: 0.09136584233343419      Number of corners found in image2: 158
+Number of good matches for NCC: 31 out of 158 total matches (with threshold: 0.85).
+
+SIFT:
+Number of good matches for Sift: 53 out of 575 total matches (with threshold: 200).
+
+
