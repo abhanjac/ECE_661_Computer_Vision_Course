@@ -437,8 +437,8 @@ if __name__ == '__main__':
     
     # Finding matching harris corners in image1 and image2.
 
-    filepath = './HW4Pics'
-    subfolder1 = 'pair1'
+    filepath = './PicsSelf'
+    subfolder1 = 'pair2'
     filename1, filename2 = '1.jpg', '2.jpg'
 
     img1 = cv2.imread( os.path.join( filepath, subfolder1, filename1 ) )
@@ -472,7 +472,7 @@ if __name__ == '__main__':
     print( f'Number of corners found in image2: {len(listOfCorners2)}' )
     
     mode = 'SSD'
-    matchThresh = 12000
+    matchThresh = 1200
     matchedPairs1To2, goodMatches1to2, distValue = findGoodMatches( img1, listOfCorners1, \
                                                          img2, listOfCorners2, \
                                                          kernel=21, mode=mode, \
@@ -512,7 +512,7 @@ if __name__ == '__main__':
     kp1, des1 = sift.detectAndCompute( img1gray, None )
     kp2, des2 = sift.detectAndCompute( img2gray, None )
     
-    matchThresh = 50
+    matchThresh = 230
     
     matchedPairs1To2, goodMatches1to2, distValue = distanceSift( kp1, des1, kp2, des2, \
                                                                  matchThresh=matchThresh)
