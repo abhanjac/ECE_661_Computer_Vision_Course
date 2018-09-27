@@ -96,3 +96,98 @@ SIFT
 Number of good matches for Sift: 123 out of 991 total matches (with threshold: 125).
 
 
+Image pair 3 self:
+
+SSD:
+sigma1 = 0.707
+k: 0.07859938052522324      Number of corners found in image1: 257
+k: 0.07613896364679641      Number of corners found in image2: 264
+Number of good matches for SSD: 107 out of 257 total matches (with threshold: 14000).
+
+sigma1 = 1
+k: 0.10009429943788378      Number of corners found in image1: 251
+k: 0.09665368447098532      Number of corners found in image2: 248
+Number of good matches for SSD: 106 out of 248 total matches (with threshold: 14000).
+
+sigma1 = 1.414
+k: 0.08607724462332333      Number of corners found in image1: 211
+k: 0.08437462054771276      Number of corners found in image2: 225
+Number of good matches for SSD: 89 out of 211 total matches (with threshold: 14000).
+
+sigma1 = 2
+k: 0.08693278890306458      Number of corners found in image1: 174
+k: 0.08598808142040354      Number of corners found in image2: 180
+Number of good matches for SSD: 88 out of 174 total matches (with threshold: 14000).
+
+NCC:
+sigma1 = 0.707
+k: 0.07859938052522324      Number of corners found in image1: 257
+k: 0.07613896364679641      Number of corners found in image2: 264
+Number of good matches for NCC: 65 out of 257 total matches (with threshold: 0.95).
+
+sigma2 = 1
+k: 0.10009429943788378      Number of corners found in image1: 251
+k: 0.09665368447098532      Number of corners found in image2: 248
+Number of good matches for NCC: 61 out of 248 total matches (with threshold: 0.95).
+
+sigma3 = 1.414
+k: 0.08607724462332333      Number of corners found in image1: 211
+k: 0.08437462054771276      Number of corners found in image2: 225
+Number of good matches for NCC: 49 out of 211 total matches (with threshold: 0.95).
+
+sigma4 = 2
+k: 0.08693278890306458      Number of corners found in image1: 174
+k: 0.08598808142040354      Number of corners found in image2: 180
+Number of good matches for NCC: 36 out of 174 total matches (with threshold: 0.95).
+
+SIFT:
+Number of good matches for Sift: 115 out of 924 total matches (with threshold: 75).
+
+
+Image pair 4 self:
+
+SSD:
+sigma1 = 0.707
+k: 0.09980182894242279      Number of corners found in image1: 267
+k: 0.11705043141603202      Number of corners found in image2: 271
+Number of good matches for SSD: 105 out of 267 total matches (with threshold: 1200).
+
+sigma2 = 1
+k: 0.12666539772594182      Number of corners found in image1: 235
+k: 0.1444822003033358       Number of corners found in image2: 253
+Number of good matches for SSD: 94 out of 235 total matches (with threshold: 1200).
+
+sigma3 = 1.414
+k: 0.11411935519440061      Number of corners found in image1: 232
+k: 0.13203954306236182      Number of corners found in image2: 224
+Number of good matches for SSD: 63 out of 224 total matches (with threshold: 1200).
+
+sigma4 = 2
+k: 0.10243701921255241      Number of corners found in image1: 167
+k: 0.11911629425322827      Number of corners found in image2: 180
+Number of good matches for SSD: 57 out of 167 total matches (with threshold: 1200).
+
+NCC:
+sigma1 = 0.707
+k: 0.09980182894242279      Number of corners found in image1: 267
+k: 0.11705043141603202      Number of corners found in image2: 271
+Number of good matches for NCC: 27 out of 267 total matches (with threshold: 0.9).
+
+sigma2 = 1
+k: 0.12666539772594182      Number of corners found in image1: 235
+k: 0.1444822003033358       Number of corners found in image2: 253
+Number of good matches for NCC: 24 out of 235 total matches (with threshold: 0.9).
+
+sigma3 = 1.414
+k: 0.11411935519440061      Number of corners found in image1: 232
+k: 0.13203954306236182      Number of corners found in image2: 224
+Number of good matches for NCC: 17 out of 224 total matches (with threshold: 0.9).
+
+sigma4 = 2
+k: 0.10243701921255241      Number of corners found in image1: 167
+k: 0.11911629425322827      Number of corners found in image2: 180
+Number of good matches for NCC: 9 out of 167 total matches (with threshold: 0.9).
+
+SIFT:
+Number of good matches for Sift: 41 out of 191 total matches (with threshold: 230).
+
