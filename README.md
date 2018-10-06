@@ -9,5 +9,5 @@ Review of basic homogeneous coordinates.
 #### Homework 2:
 Estimate homographies between images and use them to transform images.
 
-#### Homework3:
+#### Homework 3:
 Eliminate the affine and projective distortions from images using point-to-point correspondence and vanishing line method.
