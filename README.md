@@ -6,7 +6,7 @@ All the codes are in python. And the reports are in LaTeX.
 #### Homework 1:
 Review of basic homogeneous coordinates.
 
-#### Homework2:
+#### Homework 2:
 Estimate homographies between images and use them to transform images.
 
 #### Homework3:
