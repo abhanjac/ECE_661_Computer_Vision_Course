@@ -11,7 +11,7 @@ All the codes are in python. And the reports are in LaTeX.
 Review of basic Homogeneous coordinates.
 
 #### Homework 2:
-Estimate homographies between images and use them to transform images.
+Estimate Homographies between images and use them to transform images.
 
 #### Homework 3:
 Eliminate the affine and projective distortions from images using point-to-point correspondence and vanishing line method.
