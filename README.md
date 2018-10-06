@@ -4,7 +4,8 @@ These comprise of the homeworks that was done as part of the course.
 All the codes are in python. And the reports are in LaTeX.
 
 #### Homework1:
-Estimate homographies between images and use them to transform images.
+Review of basic homogeneous coordinates.
 
 #### Homework2:
+Estimate homographies between images and use them to transform images.
 
