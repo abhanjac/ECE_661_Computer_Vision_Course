@@ -14,7 +14,7 @@ Review of basic Homogeneous coordinates.
 Estimate Homographies between images and use them to transform images.
 
 #### Homework 3:
-Eliminate the affine and projective distortions from images using point-to-point correspondence and vanishing line method.
+Eliminate the Affine and projective distortions from images using point-to-point correspondence and vanishing line method.
 
 #### Homework 4:
 Find the SIFT or SURF or Harris Corners interest points from two images of the same scene taken from two different viewpoints, and establish the correspondence between the interest points.
