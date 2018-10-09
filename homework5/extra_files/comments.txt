@@ -1,0 +1,47 @@
+Between image a.jpg and image b.jpg:
+Good matches: 135 out of 1351 total matches (with threshold: 10%).
+RANSAC parameters: delta = 6, N = 155, M = 94
+H by ransac
+[[ 1.49036667e+00 -4.55254250e-02 -2.45059327e+02]
+ [ 2.20059856e-01  1.29843944e+00 -9.51683618e+01]
+ [ 7.48700230e-04  9.12877275e-06  1.00000000e+00]]
+H refined by LM
+[[ 1.48508957e+00 -4.68079247e-02 -2.43404073e+02]
+ [ 2.18582349e-01  1.29480201e+00 -9.45255904e+01]
+ [ 7.43621281e-04  5.49438435e-06  1.00000000e+00]]
+
+Between image b.jpg and image c.jpg:
+Good matches: 133 out of 1334 total matches (with threshold: 10%).
+RANSAC parameters: delta = 6, N = 155, M = 93
+H by ransac
+[[ 1.59566599e+00 -3.35410825e-02 -2.81980370e+02]
+ [ 2.57488281e-01  1.38172808e+00 -1.23171235e+02]
+ [ 8.95353759e-04  5.05071184e-05  1.00000000e+00]]
+H refined by LM
+[[ 1.57718600e+00 -3.60276439e-02 -2.76963826e+02]
+ [ 2.49951813e-01  1.36786852e+00 -1.19508416e+02]
+ [ 8.70788069e-04  4.36116803e-05  1.00000000e+00]]
+
+Between image c.jpg and image d.jpg:
+Good matches: 133 out of 1334 total matches (with threshold: 10%).
+RANSAC parameters: delta = 6, N = 155, M = 93
+H by ransac
+[[ 1.78484856e+00 -5.93579590e-02 -3.85648767e+02]
+ [ 3.48402718e-01  1.51542520e+00 -1.67619898e+02]
+ [ 1.21659483e-03  1.49819698e-05  1.00000000e+00]]
+H refined by LM
+[[ 1.73465907e+00 -6.61241817e-02 -3.70559937e+02]
+ [ 3.28011268e-01  1.47285874e+00 -1.56143623e+02]
+ [ 1.15276794e-03 -1.01210145e-05  1.00000000e+00]]
+
+Between image d.jpg and image e.jpg:
+Good matches: 123 out of 1239 total matches (with threshold: 10%).
+RANSAC parameters: delta = 6, N = 155, M = 86
+H by ransac
+[[ 1.31490549e+00 -1.30339803e-02 -1.56637994e+02]
+ [ 1.21533695e-01  1.18679772e+00 -5.76128527e+01]
+ [ 4.76005855e-04  2.98097264e-05  1.00000000e+00]]
+H refined by LM
+[[ 1.30418786e+00 -1.64427547e-02 -1.53763140e+02]
+ [ 1.18121292e-01  1.17671727e+00 -5.55213881e+01]
+ [ 4.64847605e-04  1.93443231e-05  1.00000000e+00]]
