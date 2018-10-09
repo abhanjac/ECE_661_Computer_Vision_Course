@@ -14,11 +14,13 @@ H refined by LM
 
 Between image b.jpg and image c.jpg:
 Good matches: 133 out of 1334 total matches (with threshold: 10%).
+
 RANSAC parameters: delta = 6, N = 155, M = 93
 H by ransac
 [[ 1.59566599e+00 -3.35410825e-02 -2.81980370e+02]
  [ 2.57488281e-01  1.38172808e+00 -1.23171235e+02]
  [ 8.95353759e-04  5.05071184e-05  1.00000000e+00]]
+
 H refined by LM
 [[ 1.57718600e+00 -3.60276439e-02 -2.76963826e+02]
  [ 2.49951813e-01  1.36786852e+00 -1.19508416e+02]
