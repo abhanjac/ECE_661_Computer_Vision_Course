@@ -509,22 +509,22 @@ if __name__ == '__main__':
 
 #-------------------------------------------------------------------------------
 
-        ## Save the images showing the matches.
-        #img = np.hstack( ( img1, img2 ) )
-        #for idx, kp in enumerate( goodMatches1to2 ):
-            #pt1 = kp[0]
-            #pt2 = [ kp[1][0] + imgW, kp[1][1] ]
-            #cv2.line( img, tuple(pt1), tuple(pt2), (255,0,255), 1 )
+        # Save the images showing the matches.
+        img = np.hstack( ( img1, img2 ) )
+        for idx, kp in enumerate( goodMatches1to2 ):
+            pt1 = kp[0]
+            pt2 = [ kp[1][0] + imgW, kp[1][1] ]
+            cv2.line( img, tuple(pt1), tuple(pt2), (255,0,255), 1 )
             
-            #cv2.circle( img, tuple(pt1), 2, (0,255,0), -1 )
-            #cv2.circle( img, tuple(pt1), 3, (0,0,255), 1 )
+            cv2.circle( img, tuple(pt1), 2, (0,255,0), -1 )
+            cv2.circle( img, tuple(pt1), 3, (0,0,255), 1 )
             
-            #cv2.circle( img, tuple(pt2), 2, (0,255,0), -1 )
-            #cv2.circle( img, tuple(pt2), 3, (0,0,255), 1 )
+            cv2.circle( img, tuple(pt2), 2, (0,255,0), -1 )
+            cv2.circle( img, tuple(pt2), 3, (0,0,255), 1 )
 
-        ##cv2.imshow( 'Matches', img )
-        ##cv2.waitKey(0)
-        #cv2.imwrite( f'sift_matches_{img1Name}_{img2Name}.jpg', img )
+        #cv2.imshow( 'Matches', img )
+        #cv2.waitKey(0)
+        cv2.imwrite( f'sift_matches_{img1Name}_{img2Name}.jpg', img )
         
 #-------------------------------------------------------------------------------
         
