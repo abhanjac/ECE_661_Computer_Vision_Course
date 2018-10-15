@@ -13,7 +13,7 @@ Review of basic Homogeneous coordinates.
 #### Homework 2:
 Estimate Homographies between images and use them to transform images.
 
-![](homework2/extra_files/1_tiny.jpg)   ![](homework2/extra_files/3_tiny.jpg)   ![](homework2/extra_files/2_tiny.png)
+![](homework2/extra_files/1_tiny.jpg)   ![](homework2/extra_files/3_tiny.jpg)  ==>> ![](homework2/extra_files/2_tiny.png)
 
 #### Homework 3:
 Eliminate the Affine and Projective distortions from images using point-to-point correspondence and Vanishing Line method.
