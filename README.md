@@ -20,6 +20,7 @@ Estimate Homographies between images and use them to transform images.
 **Output:**
 
 ![](homework2/extra_files/2_tiny.png)
+
 ---
 
 #### Homework 3:
