@@ -12,7 +12,7 @@ All the codes are in python. And the reports are in LaTeX.
 Review of basic Homogeneous coordinates.
 
 #### Homework 2:
-Estimate Homographies between images and use them to transform images.
+Estimate Homographies between images and use them to transform images and map images from one domain to a different domain.
 
 **Inputs:**
 
