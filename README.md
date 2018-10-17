@@ -35,6 +35,8 @@ Eliminate the Affine and Projective distortions from images using point-to-point
 
 ![](homework2/extra_files/2_tiny.png)
 
+---
+
 #### Homework 4:
 Find the SIFT or SURF or Harris Corners interest points from two images of the same scene taken from two different viewpoints, and establish the correspondence between the interest points.
 
