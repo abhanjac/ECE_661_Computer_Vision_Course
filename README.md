@@ -14,11 +14,11 @@ Review of basic Homogeneous coordinates.
 #### Homework 2:
 Estimate Homographies between images and use them to transform images and map images from one domain to a different domain.
 
-**Inputs:**
+**Input:**
 
 ![](homework2/extra_files/1_tiny.jpg)   ![](homework2/extra_files/3_tiny.jpg)
 
-**Outputs:**
+**Output:**
 
 ![](homework2/extra_files/2_tiny.png)
 
