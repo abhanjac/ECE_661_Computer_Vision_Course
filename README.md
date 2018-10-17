@@ -27,6 +27,9 @@ Estimate Homographies between images and use them to transform images and map im
 #### Homework 3:
 Eliminate the Affine and Projective distortions from images using point-to-point correspondence and Vanishing Line method.
 
+**Inputs:**
+
+
 #### Homework 4:
 Find the SIFT or SURF or Harris Corners interest points from two images of the same scene taken from two different viewpoints, and establish the correspondence between the interest points.
 
