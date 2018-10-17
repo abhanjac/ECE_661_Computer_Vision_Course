@@ -27,11 +27,11 @@ Estimate Homographies between images and use them to transform images and map im
 #### Homework 3:
 Eliminate the Affine and Projective distortions from images using point-to-point correspondence and Vanishing Line method.
 
-**Inputs:**
+**Input:**
 
 ![](homework2/extra_files/1_tiny.jpg)   ![](homework2/extra_files/3_tiny.jpg)
 
-**Outputs:**
+**Output:**
 
 ![](homework2/extra_files/2_tiny.png)
 
