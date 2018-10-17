@@ -33,7 +33,7 @@ Eliminate the Affine and Projective distortions from images using point-to-point
 
 **Output:**
 
-![](homework2/extra_files/2_tiny.png)
+![](homework3/extra_files/1_tiny.png)
 
 ---
 
