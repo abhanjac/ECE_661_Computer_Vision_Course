@@ -47,6 +47,7 @@ Find the SIFT or SURF or Harris Corners interest points from two images of the s
 **Output:**
 
 ![](homework4/extra_files/3_tiny.png)
+
 ---
 
 #### Homework 5:
