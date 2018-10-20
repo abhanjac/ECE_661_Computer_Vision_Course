@@ -44,6 +44,9 @@ Find the SIFT or SURF or Harris Corners interest points from two images of the s
 
 ![](homework4/extra_files/1_tiny.jpg)   ![](homework4/extra_files/2_tiny.jpg)
 
+**Output:**
+
+
 #### Homework 5:
 Create an initial estimate of homography using Linear Least Squares Minimization and RANSAC algorithm. Then use this initial estimate to calculate Homography automatically by a Non-linear Least Squares method like Levenberg-Marquardt method. And finally use this to stitch a group of images together.
 
