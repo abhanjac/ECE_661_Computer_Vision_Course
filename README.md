@@ -40,6 +40,10 @@ Eliminate the Affine and Projective distortions from images using point-to-point
 #### Homework 4:
 Find the SIFT or SURF or Harris Corners interest points from two images of the same scene taken from two different viewpoints, and establish the correspondence between the interest points.
 
+**Input:**
+
+![](homework4/extra_files/1_tiny.jpg)   ![](homework4/extra_files/2_tiny.jpg)
+
 #### Homework 5:
 Create an initial estimate of homography using Linear Least Squares Minimization and RANSAC algorithm. Then use this initial estimate to calculate Homography automatically by a Non-linear Least Squares method like Levenberg-Marquardt method. And finally use this to stitch a group of images together.
 
