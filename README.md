@@ -55,6 +55,8 @@ Create an initial estimate of homography using Linear Least Squares Minimization
 
 **Input:**
 
+![](homework5/extra_files/1_tiny.jpg)   ![](homework5/extra_files/2_tiny.jpg)   ![](homework5/extra_files/3_tiny.jpg)   ![](homework5/extra_files/4_tiny.jpg)   ![](homework5/extra_files/5_tiny.jpg)
+
 
 
 #### Homework 6:
