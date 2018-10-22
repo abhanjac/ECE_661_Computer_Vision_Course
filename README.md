@@ -59,7 +59,9 @@ Create an initial estimate of homography using Linear Least Squares Minimization
 
 **Output:**
 
+![](homework5/extra_files/6_tiny.png)
 
+---
 
 #### Homework 6:
 Segment given images to separate out foreground objects from background of the image. Also, extract the contours of the segmented foreground.
