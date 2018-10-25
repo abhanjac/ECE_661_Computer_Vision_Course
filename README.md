@@ -74,3 +74,5 @@ Implement Otsu's Algorithm and use RGB and Texture-based Segmention to separate 
 
 **Output:**
 
+![](homework6/extra_files/2_tiny.png)   ![](homework6/extra_files/3_tiny.png)
+
