@@ -66,4 +66,4 @@ Create an initial estimate of homography using Linear Least Squares Minimization
 ---
 
 #### Homework 6:
-Segment given images to separate out foreground objects from background of the image. Also, extract the contours of the segmented foreground.
+Implement Otsu's Algorithm and use RGB and Texture-based Segmention to separate out foreground objects from background of the given images. Also, extract the contours of the segmented foreground.
