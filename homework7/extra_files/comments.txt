@@ -1,0 +1,33 @@
+1, True: 0, Predicted: 0
+2, True: 0, Predicted: 3
+3, True: 0, Predicted: 0
+4, True: 0, Predicted: 0
+5, True: 0, Predicted: 0
+6, True: 1, Predicted: 1
+7, True: 1, Predicted: 1
+8, True: 1, Predicted: 3
+9, True: 1, Predicted: 1
+10, True: 1, Predicted: 1
+11, True: 2, Predicted: 2
+12, True: 2, Predicted: 0
+13, True: 2, Predicted: 1
+14, True: 2, Predicted: 0
+15, True: 2, Predicted: 2
+16, True: 3, Predicted: 0
+17, True: 3, Predicted: 3
+18, True: 3, Predicted: 0
+19, True: 3, Predicted: 3
+20, True: 3, Predicted: 3
+21, True: 4, Predicted: 4
+22, True: 4, Predicted: 4
+23, True: 4, Predicted: 4
+24, True: 4, Predicted: 4
+25, True: 4, Predicted: 1
+Test Accuracy: 68.0 %
+
+			Beach	|	Building	|	Car	|	Mountain	|	Tree
+Beach		4		|	0			|	0	|	1			|	0
+Building	0		|	4			|	0	|	1			|	0
+Car			2		|	1			|	2	|	0			|	0
+Mountain	2		|	0			|	0	|	3			|	0
+Tree		1		|	0			|	0	|	0			|	4
