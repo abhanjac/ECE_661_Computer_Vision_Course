@@ -23,7 +23,7 @@
 23, True: 4, Predicted: 4
 24, True: 4, Predicted: 4
 25, True: 4, Predicted: 1
-Test Accuracy: 68.0 % (k=7)
+Test Accuracy: 68.0 % (K = 7).
 
 			Beach	|	Building	|	Car	|	Mountain	|	Tree
 Beach		4		|	0			|	0	|	1			|	0
