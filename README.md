@@ -85,3 +85,6 @@ Implement a classification algorithm using Local Binary Pattern features and K-N
 
 ![](homework7/extra_files/beach_tiny.jpg)   ![](homework7/extra_files/building_tiny.jpg)   ![](homework7/extra_files/car_tiny.jpg)   ![](homework7/extra_files/mountain_tiny.jpg)   ![](homework7/extra_files/tree_tiny.jpg)
 
+**Output:**
+
+
