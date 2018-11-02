@@ -80,3 +80,8 @@ Implement Otsu's Algorithm and use RGB and Texture-based Segmention to separate 
 
 #### Homework 7:
 Implement a classification algorithm using Local Binary Pattern features and K-Nearest Neighbor Classifier.
+
+**Input:**
+
+![](homework7/extra_files/beach_tiny.jpg)   ![](homework7/extra_files/building_tiny.jpg)   ![](homework7/extra_files/car_tiny.jpg)   ![](homework7/extra_files/mountain_tiny.jpg)   ![](homework7/extra_files/tree_tiny.jpg)
+
