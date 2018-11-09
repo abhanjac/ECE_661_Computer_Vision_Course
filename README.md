@@ -123,7 +123,7 @@ Implement a classification algorithm using Local Binary Pattern features and K-N
 
 #### Homework 8:
 
-
+Implement Zhang's Algorithm to find the Intrinsic and Extrinsic camera calibration parameters using checker-board patterns. Extract corners from the checker-board patterns to estimate the parameters.
 
 
 
