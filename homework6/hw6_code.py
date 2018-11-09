@@ -225,235 +225,235 @@ if __name__ == '__main__':
 
     filepath = './HW6Pics'
 
-##-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 
-    ## Color based segmentation for lighthouse image.
-    #filename = '1.jpg'
-    #img = cv2.imread( os.path.join( filepath, filename ) )
-    #kList, filteredImgList = segmentByOtsu( img, kRanges=[[0, 256], [0, 256], [0, 256]] )
+    # Color based segmentation for lighthouse image.
+    filename = '1.jpg'
+    img = cv2.imread( os.path.join( filepath, filename ) )
+    kList, filteredImgList = segmentByOtsu( img, kRanges=[[0, 256], [0, 256], [0, 256]] )
     
-    ## Red is the dominant color in the lighthouse image. Hence the red mask is 
-    ## anded with the compliment of blue and green masks to get a segmented lighthouse.
-    ## This observation is done after looking at the original image and the filtered
-    ## image returned by segmentByOtsu function.
+    # Red is the dominant color in the lighthouse image. Hence the red mask is 
+    # anded with the compliment of blue and green masks to get a segmented lighthouse.
+    # This observation is done after looking at the original image and the filtered
+    # image returned by segmentByOtsu function.
 
-    #bChan, gChan, rChan = filteredImgList[0], filteredImgList[1], filteredImgList[2]
+    bChan, gChan, rChan = filteredImgList[0], filteredImgList[1], filteredImgList[2]
     
-    #cv2.imwrite( f'./bchannel_{filename[:-4]}.png', bChan )
-    #cv2.imwrite( f'./gchannel_{filename[:-4]}.png', gChan )
-    #cv2.imwrite( f'./rchannel_{filename[:-4]}.png', rChan )
+    cv2.imwrite( f'./bchannel_{filename[:-4]}.png', bChan )
+    cv2.imwrite( f'./gchannel_{filename[:-4]}.png', gChan )
+    cv2.imwrite( f'./rchannel_{filename[:-4]}.png', rChan )
     
-##-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 
-    #combinedImg = rChan   # Starting with red.
+    combinedImg = rChan   # Starting with red.
     
-    #bChanInv = cv2.bitwise_not( bChan )  # Complimenting blue.
+    bChanInv = cv2.bitwise_not( bChan )  # Complimenting blue.
 
-    ## Anding with the compliment of blue.
-    #combinedImg = cv2.bitwise_and( combinedImg, bChanInv )
+    # Anding with the compliment of blue.
+    combinedImg = cv2.bitwise_and( combinedImg, bChanInv )
     
-    #gChanInv = cv2.bitwise_not( gChan )  # Complimenting green.
+    gChanInv = cv2.bitwise_not( gChan )  # Complimenting green.
 
-    ## Anding with the compliment of green.
-    #combinedImg = cv2.bitwise_and( combinedImg, gChanInv )
+    # Anding with the compliment of green.
+    combinedImg = cv2.bitwise_and( combinedImg, gChanInv )
 
-    #channels = np.hstack( ( bChan, gChan, rChan ) )
-    #cv2.imshow( 'Channels', channels )
-    #cv2.imshow( 'Combined Image', combinedImg )
-    #cv2.waitKey(0)
-    #cv2.imwrite( f'./combined_image_{filename[:-4]}.png', combinedImg )
-    
-##===============================================================================
-
-    ## Color based segmentation for ski image.
-    #filename = '3.jpg'
-    #img = cv2.imread( os.path.join( filepath, filename ) )
-    #kList, filteredImgList = segmentByOtsu( img, kRanges=[[0, 256], [0, 256], [0, 256]] )
-    
-    #bChan, gChan, rChan = filteredImgList[0], filteredImgList[1], filteredImgList[2]
-    
-    #cv2.imwrite( f'./bchannel_{filename[:-4]}.png', bChan )
-    #cv2.imwrite( f'./gchannel_{filename[:-4]}.png', gChan )
-    #cv2.imwrite( f'./rchannel_{filename[:-4]}.png', rChan )
-
-##-------------------------------------------------------------------------------
-
-    ## NEED ITERATION 2.
-
-    ## The foreground is filtered out in the blue image. So this means the foreground
-    ## actually lies below the k threshold. So inverting the bChan to get the
-    ## region that contains the foreground.
-    ## This observation is done after looking at the original image and the filtered
-    ## image returned by segmentByOtsu function.
-    #bChanInv = cv2.bitwise_not( bChan )  # Complimenting blue.
-    
-    #img2 = img[:,:,0]
-
-    #kList2, filteredImgList2 = segmentByOtsu( img2, kRanges=[[0, kList[0]]] )    
-    #bChan2 = filteredImgList2[0]
-    
-    #cv2.imwrite( f'./bchannel_iter_2_{filename[:-4]}.png', bChan2 )
-    
-##-------------------------------------------------------------------------------
-
-    ## Inverting the bChan again to get the foreground.
-    #bChan2Inv = cv2.bitwise_not( bChan2 )  # Complimenting blue.
-
-    ## There are some missing parts in this image, which were visible in the red 
-    ## channel. So this is or-ed with the red to get a better contour. This is 
-    ## a temporary image.
-    ## But still the part of the snow. So the green and red channel was and-ed
-    ## and then this xor-ed with the temporary image.
-    ## This observation is done after looking at the original image and the filtered
-    ## image returned by segmentByOtsu function.
-    
-    ## Oring with the red channel of iteration 1.
-    #combinedImg = cv2.bitwise_or( bChan2Inv, rChan )
-    
-    ## Oring green and red channel of iteration 1.
-    #GandR = cv2.bitwise_and( gChan, rChan )
-    
-    ## Xoring with the green channel of iteration 1.
-    #combinedImg = cv2.bitwise_xor( combinedImg, GandR )
-    
-    #cv2.imshow( 'Combined Image', combinedImg )
-    #cv2.waitKey(0)
-    #cv2.imwrite( f'./combined_image_{filename[:-4]}.png', combinedImg )
+    channels = np.hstack( ( bChan, gChan, rChan ) )
+    cv2.imshow( 'Channels', channels )
+    cv2.imshow( 'Combined Image', combinedImg )
+    cv2.waitKey(0)
+    cv2.imwrite( f'./combined_image_{filename[:-4]}.png', combinedImg )
     
 #===============================================================================
 
-    ## Color based segmentation for baby image.
-    #filename = '2.jpg'
-    #img = cv2.imread( os.path.join( filepath, filename ) )
-    #kList, filteredImgList = segmentByOtsu( img, kRanges=[[0, 256], [0, 256], [0, 256]] )
+    # Color based segmentation for ski image.
+    filename = '3.jpg'
+    img = cv2.imread( os.path.join( filepath, filename ) )
+    kList, filteredImgList = segmentByOtsu( img, kRanges=[[0, 256], [0, 256], [0, 256]] )
     
-    #bChan, gChan, rChan = filteredImgList[0], filteredImgList[1], filteredImgList[2]
+    bChan, gChan, rChan = filteredImgList[0], filteredImgList[1], filteredImgList[2]
     
-    #cv2.imwrite( f'./bchannel_{filename[:-4]}.png', bChan )
-    #cv2.imwrite( f'./gchannel_{filename[:-4]}.png', gChan )
-    #cv2.imwrite( f'./rchannel_{filename[:-4]}.png', rChan )
+    cv2.imwrite( f'./bchannel_{filename[:-4]}.png', bChan )
+    cv2.imwrite( f'./gchannel_{filename[:-4]}.png', gChan )
+    cv2.imwrite( f'./rchannel_{filename[:-4]}.png', rChan )
 
-##-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 
-    ## The baby is mostly white. So the red, blue and green are present in equal 
-    ## amounts. The images obtained are inverted and or-ed together to fill up
-    ## some of the black patches.
-    #bChanInv = cv2.bitwise_not( bChan )  # Complimenting blue.
-    #gChanInv = cv2.bitwise_not( gChan )  # Complimenting blue.
-    #rChanInv = cv2.bitwise_not( rChan )  # Complimenting blue.
+    # NEED ITERATION 2.
 
-    #combinedImg = rChanInv   # Starting with red.
+    # The foreground is filtered out in the blue image. So this means the foreground
+    # actually lies below the k threshold. So inverting the bChan to get the
+    # region that contains the foreground.
+    # This observation is done after looking at the original image and the filtered
+    # image returned by segmentByOtsu function.
+    bChanInv = cv2.bitwise_not( bChan )  # Complimenting blue.
     
-    ## Oring with the compliment of green.
-    #combinedImg = cv2.bitwise_or( combinedImg, gChanInv )
-    #combinedImg = cv2.bitwise_or( combinedImg, bChanInv )
+    img2 = img[:,:,0]
 
-    #channels = np.hstack( ( bChan, gChan, rChan ) )
-    #cv2.imshow( 'Channels', channels )
-    #cv2.imshow( 'Combined Image', combinedImg )
-    #cv2.waitKey(0)
-    #cv2.imwrite( f'./combined_image_{filename[:-4]}.png', combinedImg )
+    kList2, filteredImgList2 = segmentByOtsu( img2, kRanges=[[0, kList[0]]] )    
+    bChan2 = filteredImgList2[0]
+    
+    cv2.imwrite( f'./bchannel_iter_2_{filename[:-4]}.png', bChan2 )
+    
+#-------------------------------------------------------------------------------
 
-##===============================================================================
+    # Inverting the bChan again to get the foreground.
+    bChan2Inv = cv2.bitwise_not( bChan2 )  # Complimenting blue.
 
-    ## Texture based segmentation for lighthouse image.
+    # There are some missing parts in this image, which were visible in the red 
+    # channel. So this is or-ed with the red to get a better contour. This is 
+    # a temporary image.
+    # But still the part of the snow. So the green and red channel was and-ed
+    # and then this xor-ed with the temporary image.
+    # This observation is done after looking at the original image and the filtered
+    # image returned by segmentByOtsu function.
     
-    #filename = '1.jpg'
-    #img = cv2.imread( os.path.join( filepath, filename ) )
+    # Oring with the red channel of iteration 1.
+    combinedImg = cv2.bitwise_or( bChan2Inv, rChan )
+    
+    # Oring green and red channel of iteration 1.
+    GandR = cv2.bitwise_and( gChan, rChan )
+    
+    # Xoring with the green channel of iteration 1.
+    combinedImg = cv2.bitwise_xor( combinedImg, GandR )
+    
+    cv2.imshow( 'Combined Image', combinedImg )
+    cv2.waitKey(0)
+    cv2.imwrite( f'./combined_image_{filename[:-4]}.png', combinedImg )
+    
+#===============================================================================
 
-    #kernelH, kernelW = 3, 3
-    #varianceImg3x3 = calcVarImg( img, (kernelH, kernelH) )
+    # Color based segmentation for baby image.
+    filename = '2.jpg'
+    img = cv2.imread( os.path.join( filepath, filename ) )
+    kList, filteredImgList = segmentByOtsu( img, kRanges=[[0, 256], [0, 256], [0, 256]] )
     
-    #cv2.imshow( 'Variance Image', varianceImg3x3 )
-    #cv2.imwrite( f'./texture_image_{filename[:-4]}_{kernelH}x{kernelW}.png', varianceImg3x3 )
+    bChan, gChan, rChan = filteredImgList[0], filteredImgList[1], filteredImgList[2]
     
-    ## Since varianceImg3x3 has values which are very large than 255 because of the 
-    ## square terms involved. So they have to be normalized and converted to a range 
-    ## of 0 to 255.
-    
-    #normalizedImg3x3 = normalize( varianceImg3x3 )
-    #cv2.imshow( f'Normalized Image {kernelH}x{kernelW}', normalizedImg3x3 )
-    #cv2.imwrite( f'./normalized_texture_image_{filename[:-4]}_{kernelH}x{kernelW}.png', normalizedImg3x3 )
-    #cv2.waitKey(0)
-    
-##-------------------------------------------------------------------------------
+    cv2.imwrite( f'./bchannel_{filename[:-4]}.png', bChan )
+    cv2.imwrite( f'./gchannel_{filename[:-4]}.png', gChan )
+    cv2.imwrite( f'./rchannel_{filename[:-4]}.png', rChan )
 
-    #kernelH, kernelW = 5, 5
-    #varianceImg5x5 = calcVarImg( img, (kernelH, kernelH) )
-    
-    #cv2.imshow( 'Variance Image', varianceImg5x5 )
-    #cv2.imwrite( f'./texture_image_{filename[:-4]}_{kernelH}x{kernelW}.png', varianceImg5x5 )
-    
-    ## Since varianceImg5x5 has values which are very large than 255 because of the 
-    ## square terms involved. So they have to be normalized and converted to a range 
-    ## of 0 to 255.
-    
-    #normalizedImg5x5 = normalize( varianceImg5x5 )
-    #cv2.imshow( f'Normalized Image {kernelH}x{kernelW}', normalizedImg5x5 )
-    #cv2.imwrite( f'./normalized_texture_image_{filename[:-4]}_{kernelH}x{kernelW}.png', normalizedImg5x5 )
-    #cv2.waitKey(0)
-    
-##-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 
-    #kernelH, kernelW = 7, 7
-    #varianceImg7x7 = calcVarImg( img, (kernelH, kernelH) )
-    
-    #cv2.imshow( 'Variance Image', varianceImg7x7 )
-    #cv2.imwrite( f'./texture_image_{filename[:-4]}_{kernelH}x{kernelW}.png', varianceImg7x7 )
-    
-    ## Since varianceImg7x7 has values which are very large than 255 because of the 
-    ## square terms involved. So they have to be normalized and converted to a range 
-    ## of 0 to 255.
-    
-    #normalizedImg7x7 = normalize( varianceImg7x7 )
-    #cv2.imshow( f'Normalized Image {kernelH}x{kernelW}', normalizedImg7x7 )
-    #cv2.imwrite( f'./normalized_texture_image_{filename[:-4]}_{kernelH}x{kernelW}.png', normalizedImg7x7 )
-    #cv2.waitKey(0)
+    # The baby is mostly white. So the red, blue and green are present in equal 
+    # amounts. The images obtained are inverted and or-ed together to fill up
+    # some of the black patches.
+    bChanInv = cv2.bitwise_not( bChan )  # Complimenting blue.
+    gChanInv = cv2.bitwise_not( gChan )  # Complimenting blue.
+    rChanInv = cv2.bitwise_not( rChan )  # Complimenting blue.
 
-    #normalizedImg = cv2.merge( ( normalizedImg3x3, normalizedImg5x5, normalizedImg7x7 ) )
+    combinedImg = rChanInv   # Starting with red.
     
-    #cv2.imshow( 'Normalized Image Combined', normalizedImg )
-    #cv2.imwrite( f'./combined_normalized_texture_image_{filename[:-4]}.png', normalizedImg )
-    #cv2.waitKey(0)
+    # Oring with the compliment of green.
+    combinedImg = cv2.bitwise_or( combinedImg, gChanInv )
+    combinedImg = cv2.bitwise_or( combinedImg, bChanInv )
+
+    channels = np.hstack( ( bChan, gChan, rChan ) )
+    cv2.imshow( 'Channels', channels )
+    cv2.imshow( 'Combined Image', combinedImg )
+    cv2.waitKey(0)
+    cv2.imwrite( f'./combined_image_{filename[:-4]}.png', combinedImg )
+
+#===============================================================================
+
+    # Texture based segmentation for lighthouse image.
     
-##-------------------------------------------------------------------------------
+    filename = '1.jpg'
+    img = cv2.imread( os.path.join( filepath, filename ) )
 
-    ## Applying otsu to find the segments from the normalized combined texture images.
-
-    #originalNormImg = copy.deepcopy( normalizedImg )
-
-    #nIter = 3       # Number of iterations for otsu.
-    #bchan = normalizedImg3x3
-    #gchan = normalizedImg5x5
-    #rchan = normalizedImg7x7
-    #kList=[256, 256, 256]
+    kernelH, kernelW = 3, 3
+    varianceImg3x3 = calcVarImg( img, (kernelH, kernelH) )
     
-    #for i in range( nIter ):
-        #normalizedImg = cv2.merge( ( bchan, gchan, rchan ) )    # Merging.
-        #cv2.imshow( 'normalizedImg', normalizedImg )
-        #cv2.waitKey(0)
-        #cv2.destroyAllWindows()
+    cv2.imshow( 'Variance Image', varianceImg3x3 )
+    cv2.imwrite( f'./texture_image_{filename[:-4]}_{kernelH}x{kernelW}.png', varianceImg3x3 )
+    
+    # Since varianceImg3x3 has values which are very large than 255 because of the 
+    # square terms involved. So they have to be normalized and converted to a range 
+    # of 0 to 255.
+    
+    normalizedImg3x3 = normalize( varianceImg3x3 )
+    cv2.imshow( f'Normalized Image {kernelH}x{kernelW}', normalizedImg3x3 )
+    cv2.imwrite( f'./normalized_texture_image_{filename[:-4]}_{kernelH}x{kernelW}.png', normalizedImg3x3 )
+    cv2.waitKey(0)
+    
+#-------------------------------------------------------------------------------
 
-        #kRanges = [ [ 0, kList[0] ], [ 0, kList[1] ], [ 0, kList[2] ] ]
-        ##kRanges = [ [ kList[0], 256 ], [ kList[1], 256 ], [ kList[2], 256 ] ]
+    kernelH, kernelW = 5, 5
+    varianceImg5x5 = calcVarImg( img, (kernelH, kernelH) )
+    
+    cv2.imshow( 'Variance Image', varianceImg5x5 )
+    cv2.imwrite( f'./texture_image_{filename[:-4]}_{kernelH}x{kernelW}.png', varianceImg5x5 )
+    
+    # Since varianceImg5x5 has values which are very large than 255 because of the 
+    # square terms involved. So they have to be normalized and converted to a range 
+    # of 0 to 255.
+    
+    normalizedImg5x5 = normalize( varianceImg5x5 )
+    cv2.imshow( f'Normalized Image {kernelH}x{kernelW}', normalizedImg5x5 )
+    cv2.imwrite( f'./normalized_texture_image_{filename[:-4]}_{kernelH}x{kernelW}.png', normalizedImg5x5 )
+    cv2.waitKey(0)
+    
+#-------------------------------------------------------------------------------
 
-        #kList, filteredImgList = segmentByOtsu( normalizedImg, kRanges=kRanges )
+    kernelH, kernelW = 7, 7
+    varianceImg7x7 = calcVarImg( img, (kernelH, kernelH) )
+    
+    cv2.imshow( 'Variance Image', varianceImg7x7 )
+    cv2.imwrite( f'./texture_image_{filename[:-4]}_{kernelH}x{kernelW}.png', varianceImg7x7 )
+    
+    # Since varianceImg7x7 has values which are very large than 255 because of the 
+    # square terms involved. So they have to be normalized and converted to a range 
+    # of 0 to 255.
+    
+    normalizedImg7x7 = normalize( varianceImg7x7 )
+    cv2.imshow( f'Normalized Image {kernelH}x{kernelW}', normalizedImg7x7 )
+    cv2.imwrite( f'./normalized_texture_image_{filename[:-4]}_{kernelH}x{kernelW}.png', normalizedImg7x7 )
+    cv2.waitKey(0)
+
+    normalizedImg = cv2.merge( ( normalizedImg3x3, normalizedImg5x5, normalizedImg7x7 ) )
+    
+    cv2.imshow( 'Normalized Image Combined', normalizedImg )
+    cv2.imwrite( f'./combined_normalized_texture_image_{filename[:-4]}.png', normalizedImg )
+    cv2.waitKey(0)
+    
+#-------------------------------------------------------------------------------
+
+    # Applying otsu to find the segments from the normalized combined texture images.
+
+    originalNormImg = copy.deepcopy( normalizedImg )
+
+    nIter = 3       # Number of iterations for otsu.
+    bchan = normalizedImg3x3
+    gchan = normalizedImg5x5
+    rchan = normalizedImg7x7
+    kList=[256, 256, 256]
+    
+    for i in range( nIter ):
+        normalizedImg = cv2.merge( ( bchan, gchan, rchan ) )    # Merging.
+        cv2.imshow( 'normalizedImg', normalizedImg )
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
+
+        kRanges = [ [ 0, kList[0] ], [ 0, kList[1] ], [ 0, kList[2] ] ]
+        #kRanges = [ [ kList[0], 256 ], [ kList[1], 256 ], [ kList[2], 256 ] ]
+
+        kList, filteredImgList = segmentByOtsu( normalizedImg, kRanges=kRanges )
         
-        #bChan, gChan, rChan = filteredImgList[0], filteredImgList[1], filteredImgList[2]
+        bChan, gChan, rChan = filteredImgList[0], filteredImgList[1], filteredImgList[2]
         
-        #print( kList )
+        print( kList )
         
-        #cv2.imwrite( f'./bchannel_{filename[:-4]}.png', bChan )
-        #cv2.imwrite( f'./gchannel_{filename[:-4]}.png', gChan )
-        #cv2.imwrite( f'./rchannel_{filename[:-4]}.png', rChan )
-        ##channels = np.hstack( ( bChan, gChan, rChan ) )
-        ##cv2.imshow( 'Channels', channels )
+        cv2.imwrite( f'./bchannel_{filename[:-4]}.png', bChan )
+        cv2.imwrite( f'./gchannel_{filename[:-4]}.png', gChan )
+        cv2.imwrite( f'./rchannel_{filename[:-4]}.png', rChan )
+        #channels = np.hstack( ( bChan, gChan, rChan ) )
+        #cv2.imshow( 'Channels', channels )
         
-        #andedChannel = cv2.bitwise_or( bChan, gChan )
-        #andedChannel = cv2.bitwise_or( andedChannel, rChan )
-        #cv2.imshow( 'Combined Anded Channel', andedChannel )
-        #cv2.imwrite( f'./final_ORED_texture_image_{filename[:-4]}.png', andedChannel )
-        #cv2.waitKey(0)
+        andedChannel = cv2.bitwise_or( bChan, gChan )
+        andedChannel = cv2.bitwise_or( andedChannel, rChan )
+        cv2.imshow( 'Combined Anded Channel', andedChannel )
+        cv2.imwrite( f'./final_ORED_texture_image_{filename[:-4]}.png', andedChannel )
+        cv2.waitKey(0)
 
 #===============================================================================
 
