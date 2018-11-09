@@ -91,3 +91,4 @@ Implement a classification algorithm using Local Binary Pattern features and K-N
 
 ---
 
+#### Homework 8:
