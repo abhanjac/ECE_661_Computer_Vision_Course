@@ -250,188 +250,188 @@ if __name__ == '__main__':
     #plt.bar( np.arange( P+2 ), hist )  # Plot histogram.
     ##plt.show()
     
-##===============================================================================
+#===============================================================================
 
-    ## Training Set.
+    # Training Set.
 
-    ## The histogram of all the training images are stored in a common list.
-    ## The corresponding class index of the images are also stored in another list.
-    #listOfTrainImgHist, listOfTrainImgClassIdx = [], []
+    # The histogram of all the training images are stored in a common list.
+    # The corresponding class index of the images are also stored in another list.
+    listOfTrainImgHist, listOfTrainImgClassIdx = [], []
 
-    #for clIdx, cl in enumerate( classNames ):
-        #trainingFolder = os.path.join( trainFilepath, cl )
-        #listOfImgs = os.listdir( trainingFolder )
+    for clIdx, cl in enumerate( classNames ):
+        trainingFolder = os.path.join( trainFilepath, cl )
+        listOfImgs = os.listdir( trainingFolder )
         
-        #for idx, i in enumerate( listOfImgs ):
+        for idx, i in enumerate( listOfImgs ):
             
-            #imgFilePath = os.path.join( trainingFolder, i )            
-            #img = cv2.imread( imgFilePath, 0 )      # Read image as grayscale.
+            imgFilePath = os.path.join( trainingFolder, i )            
+            img = cv2.imread( imgFilePath, 0 )      # Read image as grayscale.
 
-            #imgH, imgW = img.shape
-            #print( f'{idx+1}: {imgFilePath}, {imgW}x{imgH}' )            
+            imgH, imgW = img.shape
+            print( f'{idx+1}: {imgFilePath}, {imgW}x{imgH}' )            
 
-            #LBPimg = np.zeros( ( imgH, imgW ), dtype=np.uint8 )
+            LBPimg = np.zeros( ( imgH, imgW ), dtype=np.uint8 )
     
-            #for y in range( 1, imgH-1 ):        # Ignoring the boundary pixels.
-                #for x in range( 1, imgW-1 ):    # Ignoring the boundary pixels.
-                    ##print(y, x)
-                    #encoding = LBPatPixelLoc( img, x, y )
-                    #LBPimg[ y, x ] = encoding
+            for y in range( 1, imgH-1 ):        # Ignoring the boundary pixels.
+                for x in range( 1, imgW-1 ):    # Ignoring the boundary pixels.
+                    #print(y, x)
+                    encoding = LBPatPixelLoc( img, x, y )
+                    LBPimg[ y, x ] = encoding
 
-            ## Neglecting the bounding rows and columns of the image as nothing 
-            ## are encoded to those pixels. They are just 0s. But if they are not 
-            ## removed, then the counts of the number of actual encoded 0s in the 
-            ## histogram will be disrupted.
-            ## So neglecting them before calculating the historgram.
-            #LBPimg = LBPimg[ 1 : imgH-1, 1 : imgW-1 ]
+            # Neglecting the bounding rows and columns of the image as nothing 
+            # are encoded to those pixels. They are just 0s. But if they are not 
+            # removed, then the counts of the number of actual encoded 0s in the 
+            # histogram will be disrupted.
+            # So neglecting them before calculating the historgram.
+            LBPimg = LBPimg[ 1 : imgH-1, 1 : imgW-1 ]
             
-            #P = 8
-            #hist = cv2.calcHist( [LBPimg], channels=[0], mask=None, histSize=[P+2], \
-                                                        #ranges=[0, P+2] )
-            ## Since different images can have different number of pixels, so the 
-            ## histogram has to be normalized before comparison. This is done by 
-            ## dividing the counts in all the bins by the total count of all bins.
-            #hist = hist / np.sum( hist ) 
+            P = 8
+            hist = cv2.calcHist( [LBPimg], channels=[0], mask=None, histSize=[P+2], \
+                                                        ranges=[0, P+2] )
+            # Since different images can have different number of pixels, so the 
+            # histogram has to be normalized before comparison. This is done by 
+            # dividing the counts in all the bins by the total count of all bins.
+            hist = hist / np.sum( hist ) 
             
-            #hist = np.reshape( hist, (P+2) )    # Reshaping before plotting.
+            hist = np.reshape( hist, (P+2) )    # Reshaping before plotting.
             
-            #listOfTrainImgHist.append( hist )   # Storing the histogram in array.
-            #listOfTrainImgClassIdx.append( classIdx[ cl ] )
+            listOfTrainImgHist.append( hist )   # Storing the histogram in array.
+            listOfTrainImgClassIdx.append( classIdx[ cl ] )
 
-    ## Converting the lists to arrays and saving them.
-    #arrOfTrainImgHist = np.array( listOfTrainImgHist )
-    #arrOfTrainImgClassIdx = np.array( listOfTrainImgClassIdx )
+    # Converting the lists to arrays and saving them.
+    arrOfTrainImgHist = np.array( listOfTrainImgHist )
+    arrOfTrainImgClassIdx = np.array( listOfTrainImgClassIdx )
 
-    #np.savez( 'train_hist_arrays.npz', arrOfTrainImgHist, arrOfTrainImgClassIdx )
-    #print( 'File saved.' )
+    np.savez( 'train_hist_arrays.npz', arrOfTrainImgHist, arrOfTrainImgClassIdx )
+    print( 'File saved.' )
 
-##===============================================================================
+#===============================================================================
 
-    ## Testing Set.
+    # Testing Set.
 
-    ## The histogram of all the testing images are stored in a common list.
-    ## The corresponding class index of the images are also stored in another list.
-    #listOfTestImgHist, listOfTestImgClassIdx = [], []
+    # The histogram of all the testing images are stored in a common list.
+    # The corresponding class index of the images are also stored in another list.
+    listOfTestImgHist, listOfTestImgClassIdx = [], []
 
-    #testingFolder = testFilepath
-    #listOfImgs = os.listdir( testingFolder )
+    testingFolder = testFilepath
+    listOfImgs = os.listdir( testingFolder )
         
-    #for idx, i in enumerate( listOfImgs ):
+    for idx, i in enumerate( listOfImgs ):
         
-        #imgFilePath = os.path.join( testingFolder, i )            
-        #img = cv2.imread( imgFilePath, 0 )      # Read image as grayscale.
+        imgFilePath = os.path.join( testingFolder, i )            
+        img = cv2.imread( imgFilePath, 0 )      # Read image as grayscale.
 
-        #imgH, imgW = img.shape
-        #print( f'{idx+1}: {imgFilePath}, {imgW}x{imgH}' )            
+        imgH, imgW = img.shape
+        print( f'{idx+1}: {imgFilePath}, {imgW}x{imgH}' )            
 
-        #LBPimg = np.zeros( ( imgH, imgW ), dtype=np.uint8 )
+        LBPimg = np.zeros( ( imgH, imgW ), dtype=np.uint8 )
 
-        #for y in range( 1, imgH-1 ):        # Ignoring the boundary pixels.
-            #for x in range( 1, imgW-1 ):    # Ignoring the boundary pixels.
-                ##print(y, x)
-                #encoding = LBPatPixelLoc( img, x, y )
-                #LBPimg[ y, x ] = encoding
+        for y in range( 1, imgH-1 ):        # Ignoring the boundary pixels.
+            for x in range( 1, imgW-1 ):    # Ignoring the boundary pixels.
+                #print(y, x)
+                encoding = LBPatPixelLoc( img, x, y )
+                LBPimg[ y, x ] = encoding
 
-        ## Neglecting the bounding rows and columns of the image as nothing 
-        ## are encoded to those pixels. They are just 0s. But if they are not 
-        ## removed, then the counts of the number of actual encoded 0s in the 
-        ## histogram will be disrupted.
-        ## So neglecting them before calculating the historgram.
-        #LBPimg = LBPimg[ 1 : imgH-1, 1 : imgW-1 ]
+        # Neglecting the bounding rows and columns of the image as nothing 
+        # are encoded to those pixels. They are just 0s. But if they are not 
+        # removed, then the counts of the number of actual encoded 0s in the 
+        # histogram will be disrupted.
+        # So neglecting them before calculating the historgram.
+        LBPimg = LBPimg[ 1 : imgH-1, 1 : imgW-1 ]
         
-        #P = 8
-        #hist = cv2.calcHist( [LBPimg], channels=[0], mask=None, histSize=[P+2], \
-                                                    #ranges=[0, P+2] )
-        ## Since different images can have different number of pixels, so the 
-        ## histogram has to be normalized before comparison. This is done by 
-        ## dividing the counts in all the bins by the total count of all bins.
-        #hist = hist / np.sum( hist ) 
+        P = 8
+        hist = cv2.calcHist( [LBPimg], channels=[0], mask=None, histSize=[P+2], \
+                                                    ranges=[0, P+2] )
+        # Since different images can have different number of pixels, so the 
+        # histogram has to be normalized before comparison. This is done by 
+        # dividing the counts in all the bins by the total count of all bins.
+        hist = hist / np.sum( hist ) 
         
-        #hist = np.reshape( hist, (P+2) )    # Reshaping before plotting.
+        hist = np.reshape( hist, (P+2) )    # Reshaping before plotting.
         
-        #listOfTestImgHist.append( hist )   # Storing the histogram in array.
+        listOfTestImgHist.append( hist )   # Storing the histogram in array.
         
-        #cl = i.split('_')[0]    # This is the class label of the test image.
+        cl = i.split('_')[0]    # This is the class label of the test image.
         
-        #listOfTestImgClassIdx.append( classIdx[ cl ] )
+        listOfTestImgClassIdx.append( classIdx[ cl ] )
         
-    ## Converting the lists to arrays and saving them.
-    #arrOfTestImgHist = np.array( listOfTestImgHist )
-    #arrOfTestImgClassIdx = np.array( listOfTestImgClassIdx )
+    # Converting the lists to arrays and saving them.
+    arrOfTestImgHist = np.array( listOfTestImgHist )
+    arrOfTestImgClassIdx = np.array( listOfTestImgClassIdx )
 
-    #np.savez( 'test_hist_arrays.npz', arrOfTestImgHist, arrOfTestImgClassIdx )
-    #print( 'File saved.' )
+    np.savez( 'test_hist_arrays.npz', arrOfTestImgHist, arrOfTestImgClassIdx )
+    print( 'File saved.' )
 
-##===============================================================================
+#===============================================================================
 
-    ## Example Set.
+    # Example Set.
 
-    ## The histogram of all the Example images are stored in a common list.
-    ## The corresponding class index of the images are also stored in another list.
-    #listOfExImgHist, listOfExImgClassIdx = [], []
+    # The histogram of all the Example images are stored in a common list.
+    # The corresponding class index of the images are also stored in another list.
+    listOfExImgHist, listOfExImgClassIdx = [], []
 
-    #exFolder = exFilepath
-    #listOfImgs = os.listdir( exFolder )
+    exFolder = exFilepath
+    listOfImgs = os.listdir( exFolder )
         
-    #for idx, i in enumerate( listOfImgs ):
+    for idx, i in enumerate( listOfImgs ):
         
-        #imgFilePath = os.path.join( exFolder, i )
-        #img = cv2.imread( imgFilePath, 0 )      # Read image as grayscale.
+        imgFilePath = os.path.join( exFolder, i )
+        img = cv2.imread( imgFilePath, 0 )      # Read image as grayscale.
 
-        #imgH, imgW = img.shape
-        #print( f'{idx+1}: {imgFilePath}, {imgW}x{imgH}' )            
+        imgH, imgW = img.shape
+        print( f'{idx+1}: {imgFilePath}, {imgW}x{imgH}' )            
 
-        #LBPimg = np.zeros( ( imgH, imgW ), dtype=np.uint8 )
+        LBPimg = np.zeros( ( imgH, imgW ), dtype=np.uint8 )
 
-        #for y in range( 1, imgH-1 ):        # Ignoring the boundary pixels.
-            #for x in range( 1, imgW-1 ):    # Ignoring the boundary pixels.
-                ##print(y, x)
-                #encoding = LBPatPixelLoc( img, x, y )
-                #LBPimg[ y, x ] = encoding
+        for y in range( 1, imgH-1 ):        # Ignoring the boundary pixels.
+            for x in range( 1, imgW-1 ):    # Ignoring the boundary pixels.
+                #print(y, x)
+                encoding = LBPatPixelLoc( img, x, y )
+                LBPimg[ y, x ] = encoding
 
-        ## Neglecting the bounding rows and columns of the image as nothing 
-        ## are encoded to those pixels. They are just 0s. But if they are not 
-        ## removed, then the counts of the number of actual encoded 0s in the 
-        ## histogram will be disrupted.
-        ## So neglecting them before calculating the historgram.
-        #LBPimg = LBPimg[ 1 : imgH-1, 1 : imgW-1 ]
+        # Neglecting the bounding rows and columns of the image as nothing 
+        # are encoded to those pixels. They are just 0s. But if they are not 
+        # removed, then the counts of the number of actual encoded 0s in the 
+        # histogram will be disrupted.
+        # So neglecting them before calculating the historgram.
+        LBPimg = LBPimg[ 1 : imgH-1, 1 : imgW-1 ]
         
-        #P = 8
-        #hist = cv2.calcHist( [LBPimg], channels=[0], mask=None, histSize=[P+2], \
-                                                    #ranges=[0, P+2] )
-        ## Since different images can have different number of pixels, so the 
-        ## histogram has to be normalized before comparison. This is done by 
-        ## dividing the counts in all the bins by the total count of all bins.
-        #hist = hist / np.sum( hist ) 
+        P = 8
+        hist = cv2.calcHist( [LBPimg], channels=[0], mask=None, histSize=[P+2], \
+                                                    ranges=[0, P+2] )
+        # Since different images can have different number of pixels, so the 
+        # histogram has to be normalized before comparison. This is done by 
+        # dividing the counts in all the bins by the total count of all bins.
+        hist = hist / np.sum( hist ) 
         
-        #hist = np.reshape( hist, (P+2) )    # Reshaping before plotting.
+        hist = np.reshape( hist, (P+2) )    # Reshaping before plotting.
         
-        #listOfExImgHist.append( hist )   # Storing the histogram in array.
+        listOfExImgHist.append( hist )   # Storing the histogram in array.
         
-        #cl = i.split('.')[0]    # This is the class label of the example image.
+        cl = i.split('.')[0]    # This is the class label of the example image.
         
-        #listOfExImgClassIdx.append( classIdx[ cl ] )
+        listOfExImgClassIdx.append( classIdx[ cl ] )
         
-        #fig1 = plt.figure(1)
-        #fig1.gca().cla()
-        #plt.bar( np.arange( P+2 ), hist )  # Plot histogram.
-        #plt.title( f'LBP Histogram for a {cl} image' )
-        ##plt.show()
-        #fig1.savefig( os.path.join( exFilepath, f'LBP_Histogram_{cl}_image.png' ) )
+        fig1 = plt.figure(1)
+        fig1.gca().cla()
+        plt.bar( np.arange( P+2 ), hist )  # Plot histogram.
+        plt.title( f'LBP Histogram for a {cl} image' )
+        #plt.show()
+        fig1.savefig( os.path.join( exFilepath, f'LBP_Histogram_{cl}_image.png' ) )
         
-        #LBPimg = normalize( LBPimg )
-        ##cv2.imshow( 'LBPimg', LBPimg )
-        ##cv2.waitKey(0)
-        #cv2.imwrite( os.path.join( exFilepath, f'LBP_image_{cl}.png' ), LBPimg )
+        LBPimg = normalize( LBPimg )
+        #cv2.imshow( 'LBPimg', LBPimg )
+        #cv2.waitKey(0)
+        cv2.imwrite( os.path.join( exFilepath, f'LBP_image_{cl}.png' ), LBPimg )
 
-    ## Converting the lists to arrays and saving them.
-    #arrOfExImgHist = np.array( listOfExImgHist )
-    #arrOfExImgClassIdx = np.array( listOfExImgClassIdx )
+    # Converting the lists to arrays and saving them.
+    arrOfExImgHist = np.array( listOfExImgHist )
+    arrOfExImgClassIdx = np.array( listOfExImgClassIdx )
 
-    #np.savez( 'example_hist_arrays.npz', arrOfExImgHist, arrOfExImgClassIdx )
-    #print( 'File saved.' )
+    np.savez( 'example_hist_arrays.npz', arrOfExImgHist, arrOfExImgClassIdx )
+    print( 'File saved.' )
 
-##===============================================================================
+#===============================================================================
 
     # Nearest Neighbor Classification.
 
