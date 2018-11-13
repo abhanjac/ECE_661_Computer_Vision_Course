@@ -1,0 +1,1197 @@
+Result on given dataset:
+
+Number of horizontal lines: 10
+Number of vertical lines: 8
+Number of intersection points: 80
+
+Time taken by LM optimizer: 181.19475197792053 sec.
+
+K:
+[[728.03017302  -2.98571451 323.02275774]
+ [  0.         727.9076025  233.62489805]
+ [  0.           0.           1.        ]]
+Refined K:
+[[728.03015794  -2.98571625 323.02272954]
+ [  0.         727.90762297 233.62490144]
+ [  0.           0.           1.        ]]
+
+k1: 0, k2: 0
+Refined k1: 0.0, Refined k2: 0.0
+
+Image: Pic_1.jpg
+Rotation Matrix (without LM):
+[[ 0.79327771 -0.18090187  0.58136477]
+ [ 0.19036028  0.98066385  0.0454024 ]
+ [-0.57833679  0.07465205  0.8123753 ]]
+Translation Vector (without LM):
+[[ -49.17705585]
+ [-122.77954887]
+ [ 555.12471576]]
+Reprojection error (without LM) Mean: 1.405342221972943, Variance: 0.36250239980875887
+Rotation Matrix (after LM optimization):
+[[ 0.79327771 -0.18090187  0.58136477]
+ [ 0.19036028  0.98066385  0.0454024 ]
+ [-0.57833679  0.07465205  0.8123753 ]]
+Translation Vector (after LM optimization):
+[[ -49.17705585]
+ [-122.77954887]
+ [ 555.12471576]]
+Reprojection error (after LM optimization) Mean: 1.4053426306550247, Variance: 0.3625033806379707
+Image: Pic_10.jpg
+Rotation Matrix (without LM):
+[[ 0.75186029  0.19303033 -0.63043271]
+ [ 0.1463277   0.8834833   0.445023  ]
+ [ 0.64287971 -0.42684489  0.63601032]]
+Translation Vector (without LM):
+[[ -75.31965914]
+ [-114.16507845]
+ [ 541.02051824]]
+Reprojection error (without LM) Mean: 1.7345891612797146, Variance: 0.7778884543063151
+Rotation Matrix (after LM optimization):
+[[ 0.75186029  0.19303033 -0.63043271]
+ [ 0.1463277   0.8834833   0.445023  ]
+ [ 0.64287971 -0.42684489  0.63601032]]
+Translation Vector (after LM optimization):
+[[ -75.31965914]
+ [-114.16507845]
+ [ 541.02051824]]
+Reprojection error (after LM optimization) Mean: 1.7345680082617094, Variance: 0.777883726102063
+Image: Pic_11.jpg
+Rotation Matrix (without LM):
+[[ 0.99961017 -0.00380196  0.02765949]
+ [ 0.00582598  0.99728056 -0.07346794]
+ [-0.02730495  0.07360045  0.99691395]]
+Translation Vector (without LM):
+[[-81.88968169]
+ [-96.779701  ]
+ [524.71163821]]
+Reprojection error (without LM) Mean: 1.687828282401632, Variance: 0.8836359522580648
+Rotation Matrix (after LM optimization):
+[[ 0.99961017 -0.00380196  0.02765949]
+ [ 0.00582598  0.99728056 -0.07346794]
+ [-0.02730495  0.07360045  0.99691395]]
+Translation Vector (after LM optimization):
+[[-81.88968169]
+ [-96.779701  ]
+ [524.71163821]]
+Reprojection error (after LM optimization) Mean: 1.687817380450446, Variance: 0.8836332428290015
+Image: Pic_12.jpg
+Rotation Matrix (without LM):
+[[ 0.88001818  0.22756559 -0.41687156]
+ [-0.01574441  0.89123087  0.45327658]
+ [ 0.47467896 -0.39232824  0.78788225]]
+Translation Vector (without LM):
+[[ -71.50302847]
+ [-116.12824788]
+ [ 539.60871867]]
+Reprojection error (without LM) Mean: 1.2519866063026637, Variance: 0.5033170621889238
+Rotation Matrix (after LM optimization):
+[[ 0.88001818  0.22756559 -0.41687156]
+ [-0.01574441  0.89123087  0.45327658]
+ [ 0.47467896 -0.39232824  0.78788225]]
+Translation Vector (after LM optimization):
+[[ -71.50302847]
+ [-116.12824788]
+ [ 539.60871867]]
+Reprojection error (after LM optimization) Mean: 1.2519750501841767, Variance: 0.5033061020489635
+Image: Pic_13.jpg
+Rotation Matrix (without LM):
+[[ 0.99944639  0.00758656  0.03239394]
+ [-0.00622256  0.99909815 -0.04200189]
+ [-0.03268338  0.04177706  0.99859225]]
+Translation Vector (without LM):
+[[-92.03692403]
+ [-99.26026474]
+ [425.04388864]]
+Reprojection error (without LM) Mean: 1.1806123152709156, Variance: 0.24913785509938835
+Rotation Matrix (after LM optimization):
+[[ 0.99944639  0.00758656  0.03239394]
+ [-0.00622256  0.99909815 -0.04200189]
+ [-0.03268338  0.04177706  0.99859225]]
+Translation Vector (after LM optimization):
+[[-92.03692403]
+ [-99.26026474]
+ [425.04388864]]
+Reprojection error (after LM optimization) Mean: 1.1806236456041348, Variance: 0.24913788502351242
+Image: Pic_14.jpg
+Rotation Matrix (without LM):
+[[ 0.95308671 -0.13205205 -0.2723747 ]
+ [ 0.11700676  0.99060181 -0.07083408]
+ [ 0.27916866  0.03564133  0.95958041]]
+Translation Vector (without LM):
+[[ -69.2705403 ]
+ [-121.44441163]
+ [ 423.06672235]]
+Reprojection error (without LM) Mean: 1.6321167298619101, Variance: 2.3903177973720986
+Rotation Matrix (after LM optimization):
+[[ 0.95308671 -0.13205205 -0.2723747 ]
+ [ 0.11700676  0.99060181 -0.07083408]
+ [ 0.27916866  0.03564133  0.95958041]]
+Translation Vector (after LM optimization):
+[[ -69.2705403 ]
+ [-121.44441163]
+ [ 423.06672235]]
+Reprojection error (after LM optimization) Mean: 1.6321083550644002, Variance: 2.39030037092661
+Image: Pic_15.jpg
+Rotation Matrix (without LM):
+[[ 0.91295059  0.17635761  0.3679935 ]
+ [-0.16205347  0.98431808 -0.06968919]
+ [-0.37451287  0.00398816  0.92721314]]
+Translation Vector (without LM):
+[[-114.81507814]
+ [ -93.08841096]
+ [ 483.45788297]]
+Reprojection error (without LM) Mean: 1.0150730190770394, Variance: 0.22226012133199413
+Rotation Matrix (after LM optimization):
+[[ 0.91295059  0.17635761  0.3679935 ]
+ [-0.16205347  0.98431808 -0.06968919]
+ [-0.37451287  0.00398816  0.92721314]]
+Translation Vector (after LM optimization):
+[[-114.81507814]
+ [ -93.08841096]
+ [ 483.45788297]]
+Reprojection error (after LM optimization) Mean: 1.0150826281291738, Variance: 0.2222638762946736
+Image: Pic_16.jpg
+Rotation Matrix (without LM):
+[[ 0.85650109 -0.01323398  0.51597553]
+ [ 0.02863909  0.99934971 -0.0219081 ]
+ [-0.51535006  0.03354138  0.85632312]]
+Translation Vector (without LM):
+[[ -96.99993056]
+ [-111.29245468]
+ [ 470.51061856]]
+Reprojection error (without LM) Mean: 2.0255115088560762, Variance: 0.9123374427750575
+Rotation Matrix (after LM optimization):
+[[ 0.85650109 -0.01323398  0.51597553]
+ [ 0.02863909  0.99934971 -0.0219081 ]
+ [-0.51535006  0.03354138  0.85632312]]
+Translation Vector (after LM optimization):
+[[ -96.99993056]
+ [-111.29245468]
+ [ 470.51061856]]
+Reprojection error (after LM optimization) Mean: 2.0255203360497385, Variance: 0.9123372009420452
+Image: Pic_17.jpg
+Rotation Matrix (without LM):
+[[ 0.87829524  0.18797749 -0.43961567]
+ [-0.20053836  0.97951702  0.01818695]
+ [ 0.43402977  0.0721863   0.89800184]]
+Translation Vector (without LM):
+[[ -98.7369733 ]
+ [-106.06687639]
+ [ 444.15053276]]
+Reprojection error (without LM) Mean: 1.0034852169238073, Variance: 0.25565233337762283
+Rotation Matrix (after LM optimization):
+[[ 0.87829524  0.18797749 -0.43961567]
+ [-0.20053836  0.97951702  0.01818695]
+ [ 0.43402977  0.0721863   0.89800184]]
+Translation Vector (after LM optimization):
+[[ -98.7369733 ]
+ [-106.06687639]
+ [ 444.15053276]]
+Reprojection error (after LM optimization) Mean: 1.0034874050192761, Variance: 0.2556539362278254
+Image: Pic_18.jpg
+Rotation Matrix (without LM):
+[[ 0.91186679  0.02486936 -0.40973221]
+ [-0.04966572  0.99751425 -0.04998627]
+ [ 0.40747059  0.06593047  0.91083527]]
+Translation Vector (without LM):
+[[ -58.2662257 ]
+ [-109.69538939]
+ [ 412.15293631]]
+Reprojection error (without LM) Mean: 1.204053996931115, Variance: 0.5072571622837379
+Rotation Matrix (after LM optimization):
+[[ 0.91186679  0.02486936 -0.40973221]
+ [-0.04966572  0.99751425 -0.04998627]
+ [ 0.40747059  0.06593047  0.91083527]]
+Translation Vector (after LM optimization):
+[[ -58.2662257 ]
+ [-109.69538939]
+ [ 412.15293631]]
+Reprojection error (after LM optimization) Mean: 1.204063581423399, Variance: 0.507265865272482
+Image: Pic_19.jpg
+Rotation Matrix (without LM):
+[[ 0.86931335  0.10839305  0.48222946]
+ [-0.07234674  0.99305346 -0.09279422]
+ [-0.48893788  0.04577952  0.87111651]]
+Translation Vector (without LM):
+[[-112.03399445]
+ [-101.27811588]
+ [ 467.19462025]]
+Reprojection error (without LM) Mean: 1.7042041319866992, Variance: 1.2640419237316665
+Rotation Matrix (after LM optimization):
+[[ 0.86931335  0.10839305  0.48222946]
+ [-0.07234674  0.99305346 -0.09279422]
+ [-0.48893788  0.04577952  0.87111651]]
+Translation Vector (after LM optimization):
+[[-112.03399445]
+ [-101.27811588]
+ [ 467.19462025]]
+Reprojection error (after LM optimization) Mean: 1.7041971535089993, Variance: 1.2640323871128891
+Image: Pic_2.jpg
+Rotation Matrix (without LM):
+[[ 0.81774842 -0.04449121 -0.57385368]
+ [-0.00779516  0.99606047 -0.08833335]
+ [ 0.57552303  0.07670774  0.81418006]]
+Translation Vector (without LM):
+[[-40.47663016]
+ [-95.37287745]
+ [491.77549006]]
+Reprojection error (without LM) Mean: 2.2447794401020658, Variance: 0.9562051594090644
+Rotation Matrix (after LM optimization):
+[[ 0.81774842 -0.04449121 -0.57385368]
+ [-0.00779516  0.99606047 -0.08833335]
+ [ 0.57552303  0.07670774  0.81418006]]
+Translation Vector (after LM optimization):
+[[-40.47663016]
+ [-95.37287745]
+ [491.77549006]]
+Reprojection error (after LM optimization) Mean: 2.244800125728628, Variance: 0.9562151473877512
+Image: Pic_20.jpg
+Rotation Matrix (without LM):
+[[ 0.80068629 -0.00103633  0.59908296]
+ [ 0.01158026  0.99983844 -0.01374766]
+ [-0.59897192  0.01794509  0.80056893]]
+Translation Vector (without LM):
+[[ -99.58687557]
+ [-112.65829948]
+ [ 491.96569767]]
+Reprojection error (without LM) Mean: 1.712483450810892, Variance: 1.4775160941711643
+Rotation Matrix (after LM optimization):
+[[ 0.80068629 -0.00103633  0.59908296]
+ [ 0.01158026  0.99983844 -0.01374766]
+ [-0.59897192  0.01794509  0.80056893]]
+Translation Vector (after LM optimization):
+[[ -99.58687557]
+ [-112.65829948]
+ [ 491.96569767]]
+Reprojection error (after LM optimization) Mean: 1.7124803559882267, Variance: 1.477536715571325
+Image: Pic_21.jpg
+Rotation Matrix (without LM):
+[[ 0.78508996 -0.17864052  0.59306098]
+ [ 0.16179462  0.98340853  0.08203756]
+ [-0.59787646  0.03154721  0.80096724]]
+Translation Vector (without LM):
+[[ -99.45141503]
+ [-134.17473567]
+ [ 496.98362225]]
+Reprojection error (without LM) Mean: 1.6271276331185713, Variance: 0.6681276069230475
+Rotation Matrix (after LM optimization):
+[[ 0.78508996 -0.17864052  0.59306098]
+ [ 0.16179462  0.98340853  0.08203756]
+ [-0.59787646  0.03154721  0.80096724]]
+Translation Vector (after LM optimization):
+[[ -99.45141503]
+ [-134.17473567]
+ [ 496.98362225]]
+Reprojection error (after LM optimization) Mean: 1.6271442719578146, Variance: 0.6681304343156027
+Image: Pic_22.jpg
+Rotation Matrix (without LM):
+[[ 0.96309456  0.00221418  0.26915418]
+ [ 0.01122848  0.99876519 -0.04839432]
+ [-0.26892898  0.0496305   0.96188046]]
+Translation Vector (without LM):
+[[-80.99885531]
+ [-96.96057465]
+ [514.92552689]]
+Reprojection error (without LM) Mean: 0.8935994022305971, Variance: 0.2147764092054535
+Rotation Matrix (after LM optimization):
+[[ 0.96309456  0.00221418  0.26915418]
+ [ 0.01122848  0.99876519 -0.04839432]
+ [-0.26892898  0.0496305   0.96188046]]
+Translation Vector (after LM optimization):
+[[-80.99885531]
+ [-96.96057465]
+ [514.92552689]]
+Reprojection error (after LM optimization) Mean: 0.8935883410016381, Variance: 0.21477412658277273
+Image: Pic_23.jpg
+Rotation Matrix (without LM):
+[[ 0.97421764 -0.16945644 -0.14894465]
+ [ 0.15831905  0.98382718 -0.08378036]
+ [ 0.16073292  0.05803953  0.98528998]]
+Translation Vector (without LM):
+[[ -63.89212788]
+ [-120.52636043]
+ [ 421.9474935 ]]
+Reprojection error (without LM) Mean: 1.826716771181817, Variance: 3.36975455202847
+Rotation Matrix (after LM optimization):
+[[ 0.97421764 -0.16945644 -0.14894465]
+ [ 0.15831905  0.98382718 -0.08378036]
+ [ 0.16073292  0.05803953  0.98528998]]
+Translation Vector (after LM optimization):
+[[ -63.89212788]
+ [-120.52636043]
+ [ 421.9474935 ]]
+Reprojection error (after LM optimization) Mean: 1.8267118494981325, Variance: 3.3697759083538843
+Image: Pic_24.jpg
+Rotation Matrix (without LM):
+[[ 0.95381715 -0.26229849 -0.14639793]
+ [ 0.25164022  0.9638628  -0.08743972]
+ [ 0.16404282  0.04656189  0.98535371]]
+Translation Vector (without LM):
+[[ -39.35326169]
+ [-125.50753159]
+ [ 445.29772289]]
+Reprojection error (without LM) Mean: 1.813299258905468, Variance: 1.034787748506906
+Rotation Matrix (after LM optimization):
+[[ 0.95381715 -0.26229849 -0.14639793]
+ [ 0.25164022  0.9638628  -0.08743972]
+ [ 0.16404282  0.04656189  0.98535371]]
+Translation Vector (after LM optimization):
+[[ -39.35326169]
+ [-125.50753159]
+ [ 445.29772289]]
+Reprojection error (after LM optimization) Mean: 1.8132833224344087, Variance: 1.0347935123315652
+Image: Pic_25.jpg
+Rotation Matrix (without LM):
+[[ 0.93803367 -0.30947672 -0.15593907]
+ [ 0.29473394  0.94914219 -0.11072944]
+ [ 0.18227653  0.0579074   0.98154063]]
+Translation Vector (without LM):
+[[ -43.70680472]
+ [-130.7587566 ]
+ [ 469.93006922]]
+Reprojection error (without LM) Mean: 1.2367830507254776, Variance: 0.49975389557218497
+Rotation Matrix (after LM optimization):
+[[ 0.93803367 -0.30947672 -0.15593907]
+ [ 0.29473394  0.94914219 -0.11072944]
+ [ 0.18227653  0.0579074   0.98154063]]
+Translation Vector (after LM optimization):
+[[ -43.70680472]
+ [-130.7587566 ]
+ [ 469.93006922]]
+Reprojection error (after LM optimization) Mean: 1.236797141846483, Variance: 0.499761264050109
+Image: Pic_26.jpg
+Rotation Matrix (without LM):
+[[ 9.99874962e-01 -1.45922951e-02 -6.09300145e-03]
+ [ 1.58128034e-02  9.25627954e-01  3.78104280e-01]
+ [ 1.22443227e-04 -3.78153350e-01  9.25742960e-01]]
+Translation Vector (without LM):
+[[ -93.81613036]
+ [-118.10967443]
+ [ 475.09065151]]
+Reprojection error (without LM) Mean: 1.331237441255963, Variance: 1.0150008772491255
+Rotation Matrix (after LM optimization):
+[[ 9.99874962e-01 -1.45922951e-02 -6.09300145e-03]
+ [ 1.58128034e-02  9.25627954e-01  3.78104280e-01]
+ [ 1.22443227e-04 -3.78153350e-01  9.25742960e-01]]
+Translation Vector (after LM optimization):
+[[ -93.81613036]
+ [-118.10967443]
+ [ 475.09065151]]
+Reprojection error (after LM optimization) Mean: 1.3312486459757558, Variance: 1.0150085029341571
+Image: Pic_27.jpg
+Rotation Matrix (without LM):
+[[ 0.97908612  0.03841496  0.19978656]
+ [-0.09947426  0.94701489  0.30539757]
+ [-0.17746901 -0.31888414  0.93103043]]
+Translation Vector (without LM):
+[[ -99.02565855]
+ [-102.18594664]
+ [ 461.99652554]]
+Reprojection error (without LM) Mean: 2.2437708616537817, Variance: 4.368328622834644
+Rotation Matrix (after LM optimization):
+[[ 0.97908612  0.03841496  0.19978656]
+ [-0.09947426  0.94701489  0.30539757]
+ [-0.17746901 -0.31888414  0.93103043]]
+Translation Vector (after LM optimization):
+[[ -99.02565855]
+ [-102.18594664]
+ [ 461.99652554]]
+Reprojection error (after LM optimization) Mean: 2.243765519414591, Variance: 4.368368847326996
+Image: Pic_28.jpg
+Rotation Matrix (without LM):
+[[ 0.9995366  -0.01137963 -0.02823261]
+ [ 0.00923896  0.99715371 -0.07482721]
+ [ 0.02900375  0.07453169  0.99679677]]
+Translation Vector (without LM):
+[[ -82.76521179]
+ [-104.4603329 ]
+ [ 389.76840215]]
+Reprojection error (without LM) Mean: 1.472926125968277, Variance: 0.43884862208775033
+Rotation Matrix (after LM optimization):
+[[ 0.9995366  -0.01137963 -0.02823261]
+ [ 0.00923896  0.99715371 -0.07482721]
+ [ 0.02900375  0.07453169  0.99679677]]
+Translation Vector (after LM optimization):
+[[ -82.76521179]
+ [-104.4603329 ]
+ [ 389.76840215]]
+Reprojection error (after LM optimization) Mean: 1.4729146917104745, Variance: 0.4388431249824891
+Image: Pic_29.jpg
+Rotation Matrix (without LM):
+[[ 0.99314213  0.08726983  0.07779902]
+ [-0.08147105  0.99386247 -0.07483222]
+ [-0.08385212  0.06798067  0.99415665]]
+Translation Vector (without LM):
+[[ -95.96966935]
+ [-107.41447841]
+ [ 399.83139165]]
+Reprojection error (without LM) Mean: 2.001211825881594, Variance: 1.8093439468657166
+Rotation Matrix (after LM optimization):
+[[ 0.99314213  0.08726983  0.07779902]
+ [-0.08147105  0.99386247 -0.07483222]
+ [-0.08385212  0.06798067  0.99415665]]
+Translation Vector (after LM optimization):
+[[ -95.96966935]
+ [-107.41447841]
+ [ 399.83139165]]
+Reprojection error (after LM optimization) Mean: 2.001203008499967, Variance: 1.8093668746890659
+Image: Pic_3.jpg
+Rotation Matrix (without LM):
+[[ 0.87179518  0.16369938 -0.46170951]
+ [-0.20241942  0.97866539 -0.0352199 ]
+ [ 0.44609364  0.12416351  0.8863317 ]]
+Translation Vector (without LM):
+[[-65.75085284]
+ [-82.61046614]
+ [502.5328193 ]]
+Reprojection error (without LM) Mean: 1.6958221193869765, Variance: 0.5178721415445149
+Rotation Matrix (after LM optimization):
+[[ 0.87179518  0.16369938 -0.46170951]
+ [-0.20241942  0.97866539 -0.0352199 ]
+ [ 0.44609364  0.12416351  0.8863317 ]]
+Translation Vector (after LM optimization):
+[[-65.75085284]
+ [-82.61046614]
+ [502.5328193 ]]
+Reprojection error (after LM optimization) Mean: 1.6958396559895852, Variance: 0.5178797776933322
+Image: Pic_30.jpg
+Rotation Matrix (without LM):
+[[ 0.98455325  0.11396221  0.13291919]
+ [-0.10035392  0.98940062 -0.1049548 ]
+ [-0.14347121  0.08999463  0.98555415]]
+Translation Vector (without LM):
+[[-96.2349849 ]
+ [-95.47767035]
+ [446.29234123]]
+Reprojection error (without LM) Mean: 2.5678445441086897, Variance: 3.289471864737931
+Rotation Matrix (after LM optimization):
+[[ 0.98455325  0.11396221  0.13291919]
+ [-0.10035392  0.98940062 -0.1049548 ]
+ [-0.14347121  0.08999463  0.98555415]]
+Translation Vector (after LM optimization):
+[[-96.2349849 ]
+ [-95.47767035]
+ [446.29234123]]
+Reprojection error (after LM optimization) Mean: 2.56784186186772, Variance: 3.2894966406347503
+Image: Pic_31.jpg
+Rotation Matrix (without LM):
+[[ 0.97958805  0.15351361  0.12977222]
+ [-0.14514032  0.98680644 -0.07174495]
+ [-0.13907389  0.05144532  0.98894481]]
+Translation Vector (without LM):
+[[-102.0232976 ]
+ [ -87.32241719]
+ [ 461.58979035]]
+Reprojection error (without LM) Mean: 1.1103411088914792, Variance: 0.32395352647165687
+Rotation Matrix (after LM optimization):
+[[ 0.97958805  0.15351361  0.12977222]
+ [-0.14514032  0.98680644 -0.07174495]
+ [-0.13907389  0.05144532  0.98894481]]
+Translation Vector (after LM optimization):
+[[-102.0232976 ]
+ [ -87.32241719]
+ [ 461.58979035]]
+Reprojection error (after LM optimization) Mean: 1.1103465203324263, Variance: 0.3239574987847944
+Image: Pic_32.jpg
+Rotation Matrix (without LM):
+[[ 0.96887591 -0.24747894 -0.00580073]
+ [ 0.24557859  0.96385729 -0.10329703]
+ [ 0.03115492  0.09865747  0.99463364]]
+Translation Vector (without LM):
+[[ -50.90057863]
+ [-127.80720049]
+ [ 444.27077213]]
+Reprojection error (without LM) Mean: 1.240255871330373, Variance: 0.5807637981908991
+Rotation Matrix (after LM optimization):
+[[ 0.96887591 -0.24747894 -0.00580073]
+ [ 0.24557859  0.96385729 -0.10329703]
+ [ 0.03115492  0.09865747  0.99463364]]
+Translation Vector (after LM optimization):
+[[ -50.90057863]
+ [-127.80720049]
+ [ 444.27077213]]
+Reprojection error (after LM optimization) Mean: 1.2402599032214732, Variance: 0.5807677727914478
+Image: Pic_33.jpg
+Rotation Matrix (without LM):
+[[ 0.97813694 -0.16912496 -0.12101598]
+ [ 0.16126641  0.98427406 -0.07209522]
+ [ 0.13130599  0.05100318  0.990029  ]]
+Translation Vector (without LM):
+[[ -55.98511264]
+ [-101.59787238]
+ [ 552.50882749]]
+Reprojection error (without LM) Mean: 1.3228531203571836, Variance: 0.32287184469015573
+Rotation Matrix (after LM optimization):
+[[ 0.97813694 -0.16912496 -0.12101598]
+ [ 0.16126641  0.98427406 -0.07209522]
+ [ 0.13130599  0.05100318  0.990029  ]]
+Translation Vector (after LM optimization):
+[[ -55.98511264]
+ [-101.59787238]
+ [ 552.50882749]]
+Reprojection error (after LM optimization) Mean: 1.3228646255815066, Variance: 0.3228782515903472
+Image: Pic_34.jpg
+Rotation Matrix (without LM):
+[[ 0.93916189 -0.11854351 -0.32236993]
+ [ 0.08615438  0.98985276 -0.11299972]
+ [ 0.33249415  0.07835145  0.93984504]]
+Translation Vector (without LM):
+[[ -75.38357866]
+ [-119.36462175]
+ [ 395.91175164]]
+Reprojection error (without LM) Mean: 1.7974166961271407, Variance: 1.3875834364907473
+Rotation Matrix (after LM optimization):
+[[ 0.93916189 -0.11854351 -0.32236993]
+ [ 0.08615438  0.98985276 -0.11299972]
+ [ 0.33249415  0.07835145  0.93984504]]
+Translation Vector (after LM optimization):
+[[ -75.38357866]
+ [-119.36462175]
+ [ 395.91175164]]
+Reprojection error (after LM optimization) Mean: 1.7974011954554314, Variance: 1.3875807877266273
+Image: Pic_35.jpg
+Rotation Matrix (without LM):
+[[ 0.94351859 -0.08078056 -0.32132097]
+ [ 0.05468858  0.99449052 -0.08943022]
+ [ 0.32677488  0.06680648  0.94273807]]
+Translation Vector (without LM):
+[[-66.62233117]
+ [-93.81527725]
+ [528.40463989]]
+Reprojection error (without LM) Mean: 1.8503934949672516, Variance: 0.5924845503028244
+Rotation Matrix (after LM optimization):
+[[ 0.94351859 -0.08078056 -0.32132097]
+ [ 0.05468858  0.99449052 -0.08943022]
+ [ 0.32677488  0.06680648  0.94273807]]
+Translation Vector (after LM optimization):
+[[-66.62233117]
+ [-93.81527725]
+ [528.40463989]]
+Reprojection error (after LM optimization) Mean: 1.850396451358978, Variance: 0.5924880200063956
+Image: Pic_36.jpg
+Rotation Matrix (without LM):
+[[ 0.98648454  0.08918752 -0.13745488]
+ [-0.09316594  0.9953901  -0.02277397]
+ [ 0.13479007  0.03527228  0.99024618]]
+Translation Vector (without LM):
+[[-77.51546259]
+ [-94.81933409]
+ [508.6465175 ]]
+Reprojection error (without LM) Mean: 1.0339834842762081, Variance: 0.27687625541352245
+Rotation Matrix (after LM optimization):
+[[ 0.98648454  0.08918752 -0.13745488]
+ [-0.09316594  0.9953901  -0.02277397]
+ [ 0.13479007  0.03527228  0.99024618]]
+Translation Vector (after LM optimization):
+[[-77.51546259]
+ [-94.81933409]
+ [508.6465175 ]]
+Reprojection error (after LM optimization) Mean: 1.033993533943884, Variance: 0.27688380491329867
+Image: Pic_37.jpg
+Rotation Matrix (without LM):
+[[ 9.91504747e-01  3.95022737e-04 -1.30069907e-01]
+ [-9.06273456e-03  9.97774911e-01 -6.60537152e-02]
+ [ 1.29754397e-01  6.66713612e-02  9.89302141e-01]]
+Translation Vector (without LM):
+[[-63.43192716]
+ [-87.23039717]
+ [561.54191745]]
+Reprojection error (without LM) Mean: 1.3299669382254093, Variance: 0.4567420547112815
+Rotation Matrix (after LM optimization):
+[[ 9.91504747e-01  3.95022737e-04 -1.30069907e-01]
+ [-9.06273456e-03  9.97774911e-01 -6.60537152e-02]
+ [ 1.29754397e-01  6.66713612e-02  9.89302141e-01]]
+Translation Vector (after LM optimization):
+[[-63.43192716]
+ [-87.23039717]
+ [561.54191745]]
+Reprojection error (after LM optimization) Mean: 1.329976999958399, Variance: 0.4567457908550454
+Image: Pic_38.jpg
+Rotation Matrix (without LM):
+[[ 0.9366158  -0.09934447  0.33597846]
+ [ 0.11242996  0.99346496 -0.01966919]
+ [-0.3318288   0.05619652  0.94166427]]
+Translation Vector (without LM):
+[[ -72.61036533]
+ [-119.60530529]
+ [ 587.61763041]]
+Reprojection error (without LM) Mean: 1.1298406467398339, Variance: 0.26445808243159763
+Rotation Matrix (after LM optimization):
+[[ 0.9366158  -0.09934447  0.33597846]
+ [ 0.11242996  0.99346496 -0.01966919]
+ [-0.3318288   0.05619652  0.94166427]]
+Translation Vector (after LM optimization):
+[[ -72.61036533]
+ [-119.60530529]
+ [ 587.61763041]]
+Reprojection error (after LM optimization) Mean: 1.1298353875355542, Variance: 0.2644589305601328
+Image: Pic_39.jpg
+Rotation Matrix (without LM):
+[[ 0.90136466 -0.01420712  0.43282781]
+ [ 0.09783134  0.98030475 -0.17155647]
+ [-0.42186584  0.19697906  0.88500196]]
+Translation Vector (without LM):
+[[ -49.80914317]
+ [-107.24910056]
+ [ 522.45991393]]
+Reprojection error (without LM) Mean: 1.9276495263798694, Variance: 0.6798774060958883
+Rotation Matrix (after LM optimization):
+[[ 0.90136466 -0.01420712  0.43282781]
+ [ 0.09783134  0.98030475 -0.17155647]
+ [-0.42186584  0.19697906  0.88500196]]
+Translation Vector (after LM optimization):
+[[ -49.80914317]
+ [-107.24910056]
+ [ 522.45991393]]
+Reprojection error (after LM optimization) Mean: 1.9276392122858084, Variance: 0.6798717744474714
+Image: Pic_4.jpg
+Rotation Matrix (without LM):
+[[ 0.82185543  0.42754556 -0.37650823]
+ [-0.41749465  0.9016781   0.11258248]
+ [ 0.38762336  0.06466365  0.91954703]]
+Translation Vector (without LM):
+[[-85.64035762]
+ [-50.80363598]
+ [550.93948179]]
+Reprojection error (without LM) Mean: 1.8649651260617879, Variance: 0.5299750682496147
+Rotation Matrix (after LM optimization):
+[[ 0.82185543  0.42754556 -0.37650823]
+ [-0.41749465  0.9016781   0.11258248]
+ [ 0.38762336  0.06466365  0.91954703]]
+Translation Vector (after LM optimization):
+[[-85.64035762]
+ [-50.80363598]
+ [550.93948179]]
+Reprojection error (after LM optimization) Mean: 1.8649809394153016, Variance: 0.5299840087510401
+Image: Pic_40.jpg
+Rotation Matrix (without LM):
+[[ 0.83155627 -0.00744895  0.55539057]
+ [ 0.04917325  0.9969712  -0.06025299]
+ [-0.55325958  0.07741411  0.82940394]]
+Translation Vector (without LM):
+[[ -53.94006561]
+ [-106.83978727]
+ [ 566.89328188]]
+Reprojection error (without LM) Mean: 1.6547571527282106, Variance: 0.6164048690143429
+Rotation Matrix (after LM optimization):
+[[ 0.83155627 -0.00744895  0.55539057]
+ [ 0.04917325  0.9969712  -0.06025299]
+ [-0.55325958  0.07741411  0.82940394]]
+Translation Vector (after LM optimization):
+[[ -53.94006561]
+ [-106.83978727]
+ [ 566.89328188]]
+Reprojection error (after LM optimization) Mean: 1.6547449866265478, Variance: 0.6163971778252493
+Image: Pic_5.jpg
+Rotation Matrix (without LM):
+[[ 0.988212   -0.15226306  0.01590603]
+ [ 0.1530497   0.98502557 -0.07937513]
+ [-0.00358194  0.08087387  0.99671791]]
+Translation Vector (without LM):
+[[ -55.96946748]
+ [-116.54515521]
+ [ 525.8277535 ]]
+Reprojection error (without LM) Mean: 1.0171892081929605, Variance: 0.2410302128443933
+Rotation Matrix (after LM optimization):
+[[ 0.988212   -0.15226306  0.01590603]
+ [ 0.1530497   0.98502557 -0.07937513]
+ [-0.00358194  0.08087387  0.99671791]]
+Translation Vector (after LM optimization):
+[[ -55.96946748]
+ [-116.54515521]
+ [ 525.8277535 ]]
+Reprojection error (after LM optimization) Mean: 1.0171975226184415, Variance: 0.2410322382018657
+Image: Pic_6.jpg
+Rotation Matrix (without LM):
+[[ 0.98864415  0.1391928  -0.0566401 ]
+ [-0.14122466  0.98940756 -0.03358974]
+ [ 0.05136469  0.04120728  0.99782946]]
+Translation Vector (without LM):
+[[-90.58089259]
+ [-82.14256495]
+ [644.31581489]]
+Reprojection error (without LM) Mean: 0.7861114939356633, Variance: 0.2796933389957147
+Rotation Matrix (after LM optimization):
+[[ 0.98864415  0.1391928  -0.0566401 ]
+ [-0.14122466  0.98940756 -0.03358974]
+ [ 0.05136469  0.04120728  0.99782946]]
+Translation Vector (after LM optimization):
+[[-90.58089259]
+ [-82.14256495]
+ [644.31581489]]
+Reprojection error (after LM optimization) Mean: 0.7861179466056346, Variance: 0.2796954558005458
+Image: Pic_7.jpg
+Rotation Matrix (without LM):
+[[ 0.99924042  0.01747621  0.03483061]
+ [-0.03339606  0.84464346  0.53428656]
+ [-0.02008214 -0.53504393  0.84458552]]
+Translation Vector (without LM):
+[[ -87.90298217]
+ [-115.01831882]
+ [ 570.94377373]]
+Reprojection error (without LM) Mean: 1.2637059197199796, Variance: 0.5228674021190924
+Rotation Matrix (after LM optimization):
+[[ 0.99924042  0.01747621  0.03483061]
+ [-0.03339606  0.84464346  0.53428656]
+ [-0.02008214 -0.53504393  0.84458552]]
+Translation Vector (after LM optimization):
+[[ -87.90298217]
+ [-115.01831882]
+ [ 570.94377373]]
+Reprojection error (after LM optimization) Mean: 1.263699120055712, Variance: 0.522861674078676
+Image: Pic_8.jpg
+Rotation Matrix (without LM):
+[[ 0.91805226  0.06392232  0.39127227]
+ [-0.25603959  0.8490981   0.46203479]
+ [-0.30269421 -0.52435327  0.79588307]]
+Translation Vector (without LM):
+[[-95.884744  ]
+ [-91.8697265 ]
+ [590.66833964]]
+Reprojection error (without LM) Mean: 1.420592938968435, Variance: 0.4214380845962542
+Rotation Matrix (after LM optimization):
+[[ 0.91805226  0.06392232  0.39127227]
+ [-0.25603959  0.8490981   0.46203479]
+ [-0.30269421 -0.52435327  0.79588307]]
+Translation Vector (after LM optimization):
+[[-95.884744  ]
+ [-91.8697265 ]
+ [590.66833964]]
+Reprojection error (after LM optimization) Mean: 1.4206097577780203, Variance: 0.42144147103098817
+Image: Pic_9.jpg
+Rotation Matrix (without LM):
+[[ 0.89372919 -0.08237561  0.4409789 ]
+ [-0.17293055  0.84376294  0.50809362]
+ [-0.41393617 -0.53035682  0.73985031]]
+Translation Vector (without LM):
+[[-55.8630463 ]
+ [-91.04978177]
+ [602.54203927]]
+Reprojection error (without LM) Mean: 1.7717823298196762, Variance: 0.8221408248521165
+Rotation Matrix (after LM optimization):
+[[ 0.8882456  -0.08558147  0.45132646]
+ [-0.17433812  0.84618398  0.50356618]
+ [-0.42500115 -0.52597385  0.73669908]]
+Translation Vector (after LM optimization):
+[[-55.86310165]
+ [-91.0497692 ]
+ [602.54203275]]
+Reprojection error (after LM optimization) Mean: 1.1605611664026956, Variance: 0.5939727317908163
+
+Mean Error: 1.5258552543229036 (without optimization)
+Error Variance: 0.1618650688979799 (without optimization)
+
+Mean Error: 1.5105757558859927 (after LM optimization)
+Error Variance: 0.16345391840792667 (after LM optimization)
+
+
+
+Result on own dataset:
+
+Number of horizontal lines: 10
+Number of vertical lines: 8
+Number of intersection points: 80
+
+Time taken by LM optimizer: 18.735270738601685 sec.
+
+K:
+[[659.22045225  -3.81899913 251.95646213]
+ [  0.         496.40063875 341.95411803]
+ [  0.           0.           1.        ]]
+Refined K:
+[[659.22049731  -3.81911891 251.95678503]
+ [  0.         496.40061558 341.95417419]
+ [  0.           0.           1.        ]]
+
+k1: 0, k2: 0
+Refined k1: 0.0, Refined k2: 0.0
+
+Image: 1.jpg
+Rotation Matrix (without LM):
+[[ 0.99984877 -0.01607424 -0.00663689]
+ [ 0.01482242  0.98729761 -0.15818889]
+ [ 0.00909535  0.1580666   0.98738656]]
+Translation Vector (without LM):
+[[ -96.09606301]
+ [-145.83205472]
+ [ 472.83870073]]
+Reprojection error (without LM) Mean: 2.153187575384726, Variance: 0.8715048907232958
+Rotation Matrix (after LM optimization):
+[[ 0.99984877 -0.01607424 -0.00663689]
+ [ 0.01482242  0.98729761 -0.15818889]
+ [ 0.00909535  0.1580666   0.98738656]]
+Translation Vector (after LM optimization):
+[[ -96.09606301]
+ [-145.83205472]
+ [ 472.83870073]]
+Reprojection error (after LM optimization) Mean: 2.1529467131039803, Variance: 0.8714307086343691
+Image: 10.jpg
+Rotation Matrix (without LM):
+[[ 0.99698122  0.04802098  0.06101179]
+ [-0.07003239  0.89546762  0.43958299]
+ [-0.03352488 -0.44252878  0.89612742]]
+Translation Vector (without LM):
+[[-119.8128972 ]
+ [-162.19178526]
+ [ 441.03534493]]
+Reprojection error (without LM) Mean: 0.8187484290669289, Variance: 0.17780307151076924
+Rotation Matrix (after LM optimization):
+[[ 0.99698122  0.04802098  0.06101179]
+ [-0.07003239  0.89546762  0.43958299]
+ [-0.03352488 -0.44252878  0.89612742]]
+Translation Vector (after LM optimization):
+[[-119.8128972 ]
+ [-162.19178526]
+ [ 441.03534493]]
+Reprojection error (after LM optimization) Mean: 0.8185709003357614, Variance: 0.17773761705579316
+Image: 11.jpg
+Rotation Matrix (without LM):
+[[ 0.8129238  -0.16546259  0.55836997]
+ [ 0.13442379  0.98621013  0.09653919]
+ [-0.56664375 -0.0034208   0.8239558 ]]
+Translation Vector (without LM):
+[[ -93.14638728]
+ [-192.08279306]
+ [ 495.43712032]]
+Reprojection error (without LM) Mean: 1.1514357066292076, Variance: 0.31990720940127737
+Rotation Matrix (after LM optimization):
+[[ 0.8129238  -0.16546259  0.55836997]
+ [ 0.13442379  0.98621013  0.09653919]
+ [-0.56664375 -0.0034208   0.8239558 ]]
+Translation Vector (after LM optimization):
+[[ -93.14638728]
+ [-192.08279306]
+ [ 495.43712032]]
+Reprojection error (after LM optimization) Mean: 1.1512559309065231, Variance: 0.3199005400152002
+Image: 12.jpg
+Rotation Matrix (without LM):
+[[ 0.65274899 -0.07918151 -0.75342487]
+ [ 0.18515647  0.98103636  0.05731262]
+ [ 0.7345991  -0.17691225  0.65503147]]
+Translation Vector (without LM):
+[[ -58.3097022 ]
+ [-200.39391161]
+ [ 475.51422158]]
+Reprojection error (without LM) Mean: 0.7488141672338575, Variance: 0.17962358090446118
+Rotation Matrix (after LM optimization):
+[[ 0.65274899 -0.07918151 -0.75342487]
+ [ 0.18515647  0.98103636  0.05731262]
+ [ 0.7345991  -0.17691225  0.65503147]]
+Translation Vector (after LM optimization):
+[[ -58.3097022 ]
+ [-200.39391161]
+ [ 475.51422158]]
+Reprojection error (after LM optimization) Mean: 0.7489123872154367, Variance: 0.1796518449257667
+Image: 13.jpg
+Rotation Matrix (without LM):
+[[ 0.99974583 -0.02186007  0.00551388]
+ [ 0.02241851  0.98980145 -0.14067874]
+ [-0.0023824   0.14076659  0.99003994]]
+Translation Vector (without LM):
+[[ -95.89731662]
+ [-143.40136229]
+ [ 513.54962755]]
+Reprojection error (without LM) Mean: 0.9629581000226916, Variance: 0.2580938352809118
+Rotation Matrix (after LM optimization):
+[[ 0.99974583 -0.02186007  0.00551388]
+ [ 0.02241851  0.98980145 -0.14067874]
+ [-0.0023824   0.14076659  0.99003994]]
+Translation Vector (after LM optimization):
+[[ -95.89731662]
+ [-143.40136229]
+ [ 513.54962755]]
+Reprojection error (after LM optimization) Mean: 0.9628512638889161, Variance: 0.2580777226973362
+Image: 14.jpg
+Rotation Matrix (without LM):
+[[ 0.87212458 -0.00926746  0.48919611]
+ [ 0.07852155  0.98951258 -0.12124035]
+ [-0.48294212  0.14414913  0.86370594]]
+Translation Vector (without LM):
+[[-118.40149975]
+ [-145.26654415]
+ [ 642.09759598]]
+Reprojection error (without LM) Mean: 2.1865490984356617, Variance: 0.988334852597549
+Rotation Matrix (after LM optimization):
+[[ 0.87212458 -0.00926746  0.48919611]
+ [ 0.07852155  0.98951258 -0.12124035]
+ [-0.48294212  0.14414913  0.86370594]]
+Translation Vector (after LM optimization):
+[[-118.40149975]
+ [-145.26654415]
+ [ 642.09759598]]
+Reprojection error (after LM optimization) Mean: 2.1864895544324923, Variance: 0.9883048039529898
+Image: 15.jpg
+Rotation Matrix (without LM):
+[[ 0.7823975  -0.0172933  -0.62253923]
+ [-0.05148578  0.99439654 -0.0923295 ]
+ [ 0.62064754  0.10429028  0.77712301]]
+Translation Vector (without LM):
+[[ -57.27189047]
+ [-121.39755117]
+ [ 495.70577238]]
+Reprojection error (without LM) Mean: 1.894248525991704, Variance: 0.5040566811011393
+Rotation Matrix (after LM optimization):
+[[ 0.7823975  -0.0172933  -0.62253923]
+ [-0.05148578  0.99439654 -0.0923295 ]
+ [ 0.62064754  0.10429028  0.77712301]]
+Translation Vector (after LM optimization):
+[[ -57.27189047]
+ [-121.39755117]
+ [ 495.70577238]]
+Reprojection error (after LM optimization) Mean: 1.8944992542949126, Variance: 0.504102305359349
+Image: 16.jpg
+Rotation Matrix (without LM):
+[[ 0.9996936  -0.02015033 -0.01437582]
+ [ 0.01429284  0.94408702 -0.32938643]
+ [ 0.02020927  0.32908003  0.94408576]]
+Translation Vector (without LM):
+[[-110.59357828]
+ [ -91.24325829]
+ [ 558.60417988]]
+Reprojection error (without LM) Mean: 2.3925509503622386, Variance: 0.8657862265831655
+Rotation Matrix (after LM optimization):
+[[ 0.9996936  -0.02015033 -0.01437582]
+ [ 0.01429284  0.94408702 -0.32938643]
+ [ 0.02020927  0.32908003  0.94408576]]
+Translation Vector (after LM optimization):
+[[-110.59357828]
+ [ -91.24325829]
+ [ 558.60417988]]
+Reprojection error (after LM optimization) Mean: 2.3922986952422405, Variance: 0.8656556518426877
+Image: 17.jpg
+Rotation Matrix (without LM):
+[[ 0.99970417  0.01109347 -0.02164481]
+ [-0.00167179  0.91916154  0.39387722]
+ [ 0.02426454 -0.39372451  0.91890818]]
+Translation Vector (without LM):
+[[-106.20709204]
+ [-136.06690566]
+ [ 660.654351  ]]
+Reprojection error (without LM) Mean: 0.7267195061830998, Variance: 0.12630291844326424
+Rotation Matrix (after LM optimization):
+[[ 0.99970417  0.01109347 -0.02164481]
+ [-0.00167179  0.91916154  0.39387722]
+ [ 0.02426454 -0.39372451  0.91890818]]
+Translation Vector (after LM optimization):
+[[-106.20709204]
+ [-136.06690566]
+ [ 660.654351  ]]
+Reprojection error (after LM optimization) Mean: 0.7267946861488246, Variance: 0.12636659891544233
+Image: 18.jpg
+Rotation Matrix (without LM):
+[[ 0.72765212 -0.07079175 -0.6822836 ]
+ [ 0.14633486  0.98778324  0.05357591]
+ [ 0.67015558 -0.1388265   0.72912187]]
+Translation Vector (without LM):
+[[ -56.27702612]
+ [-219.46716028]
+ [ 561.18567713]]
+Reprojection error (without LM) Mean: 1.44784551670521, Variance: 0.3296753939568222
+Rotation Matrix (after LM optimization):
+[[ 0.72765212 -0.07079175 -0.6822836 ]
+ [ 0.14633486  0.98778324  0.05357591]
+ [ 0.67015558 -0.1388265   0.72912187]]
+Translation Vector (after LM optimization):
+[[ -56.27702612]
+ [-219.46716028]
+ [ 561.18567713]]
+Reprojection error (after LM optimization) Mean: 1.4480762424282552, Variance: 0.3297324235028132
+Image: 19.jpg
+Rotation Matrix (without LM):
+[[ 0.85148421 -0.51610545  0.09278898]
+ [ 0.52297924  0.84873484 -0.07837014]
+ [-0.03830599  0.11525765  0.99259676]]
+Translation Vector (without LM):
+[[ -38.88774   ]
+ [-148.84918641]
+ [ 508.69709612]]
+Reprojection error (without LM) Mean: 0.9202265882320351, Variance: 0.26686599247158027
+Rotation Matrix (after LM optimization):
+[[ 0.85148421 -0.51610545  0.09278898]
+ [ 0.52297924  0.84873484 -0.07837014]
+ [-0.03830599  0.11525765  0.99259676]]
+Translation Vector (after LM optimization):
+[[ -38.88774   ]
+ [-148.84918641]
+ [ 508.69709612]]
+Reprojection error (after LM optimization) Mean: 0.920150251264908, Variance: 0.26678846915683363
+Image: 2.jpg
+Rotation Matrix (without LM):
+[[ 0.76005636  0.03024915 -0.64915277]
+ [-0.0828813   0.99527077 -0.05066353]
+ [ 0.64455025  0.09230976  0.75896896]]
+Translation Vector (without LM):
+[[ -34.29969942]
+ [-101.42651376]
+ [ 474.50747626]]
+Reprojection error (without LM) Mean: 2.6468135669846253, Variance: 0.9060973643556931
+Rotation Matrix (after LM optimization):
+[[ 0.76005636  0.03024915 -0.64915277]
+ [-0.0828813   0.99527077 -0.05066353]
+ [ 0.64455025  0.09230976  0.75896896]]
+Translation Vector (after LM optimization):
+[[ -34.29969942]
+ [-101.42651376]
+ [ 474.50747626]]
+Reprojection error (after LM optimization) Mean: 2.647041084996144, Variance: 0.906165201279082
+Image: 20.jpg
+Rotation Matrix (without LM):
+[[ 0.74551717  0.0982515  -0.65920467]
+ [-0.28287746  0.94221343 -0.17948314]
+ [ 0.603477    0.3202819   0.73022942]]
+Translation Vector (without LM):
+[[-57.08991607]
+ [-51.33983117]
+ [502.10411594]]
+Reprojection error (without LM) Mean: 2.199327553108472, Variance: 0.7398101129468406
+Rotation Matrix (after LM optimization):
+[[ 0.74551717  0.0982515  -0.65920467]
+ [-0.28287746  0.94221343 -0.17948314]
+ [ 0.603477    0.3202819   0.73022942]]
+Translation Vector (after LM optimization):
+[[-57.08991607]
+ [-51.33983117]
+ [502.10411594]]
+Reprojection error (after LM optimization) Mean: 2.1995826443161404, Variance: 0.7398316785691552
+Image: 3.jpg
+Rotation Matrix (without LM):
+[[ 0.92266513  0.00599927  0.38555552]
+ [ 0.02395809  0.99705526 -0.07284786]
+ [-0.38485719  0.07645136  0.9198044 ]]
+Translation Vector (without LM):
+[[-123.43632308]
+ [-108.84810195]
+ [ 650.87082517]]
+Reprojection error (without LM) Mean: 2.4132816355630267, Variance: 1.5016335090671227
+Rotation Matrix (after LM optimization):
+[[ 0.92266513  0.00599927  0.38555552]
+ [ 0.02395809  0.99705526 -0.07284786]
+ [-0.38485719  0.07645136  0.9198044 ]]
+Translation Vector (after LM optimization):
+[[-123.43632308]
+ [-108.84810195]
+ [ 650.87082517]]
+Reprojection error (after LM optimization) Mean: 2.413066069070294, Variance: 1.5015058319924304
+Image: 4.jpg
+Rotation Matrix (without LM):
+[[ 0.88209794  0.02715609 -0.47028265]
+ [-0.0550417   0.99744024 -0.04564403]
+ [ 0.46783933  0.06614767  0.8813347 ]]
+Translation Vector (without LM):
+[[ -76.28005611]
+ [-109.68073409]
+ [ 512.61501694]]
+Reprojection error (without LM) Mean: 3.2881471998667338, Variance: 1.6041805033199434
+Rotation Matrix (after LM optimization):
+[[ 0.88209794  0.02715609 -0.47028265]
+ [-0.0550417   0.99744024 -0.04564403]
+ [ 0.46783933  0.06614767  0.8813347 ]]
+Translation Vector (after LM optimization):
+[[ -76.28005611]
+ [-109.68073409]
+ [ 512.61501694]]
+Reprojection error (after LM optimization) Mean: 3.2883756533877273, Variance: 1.6043328446672387
+Image: 5.jpg
+Rotation Matrix (without LM):
+[[ 0.82602756 -0.55639177  0.09003704]
+ [ 0.56362     0.81634451 -0.12615124]
+ [-0.00331173  0.15495107  0.98791659]]
+Translation Vector (without LM):
+[[ -24.46011232]
+ [-175.74224777]
+ [ 566.27457338]]
+Reprojection error (without LM) Mean: 1.3854830839431365, Variance: 0.3520938898125652
+Rotation Matrix (after LM optimization):
+[[ 0.82602756 -0.55639177  0.09003704]
+ [ 0.56362     0.81634451 -0.12615124]
+ [-0.00331173  0.15495107  0.98791659]]
+Translation Vector (after LM optimization):
+[[ -24.46011232]
+ [-175.74224777]
+ [ 566.27457338]]
+Reprojection error (after LM optimization) Mean: 1.385326285137284, Variance: 0.3519977505453111
+Image: 6.jpg
+Rotation Matrix (without LM):
+[[ 0.6445037  -0.25376154  0.72126282]
+ [ 0.31361021  0.94805368  0.05331845]
+ [-0.69732605  0.19183144  0.69060632]]
+Translation Vector (without LM):
+[[ -62.84611075]
+ [-117.5337123 ]
+ [ 621.03546554]]
+Reprojection error (without LM) Mean: 2.5119196778075463, Variance: 1.3324298685205598
+Rotation Matrix (after LM optimization):
+[[ 0.6445037  -0.25376154  0.72126282]
+ [ 0.31361021  0.94805368  0.05331845]
+ [-0.69732605  0.19183144  0.69060632]]
+Translation Vector (after LM optimization):
+[[ -62.84611075]
+ [-117.5337123 ]
+ [ 621.03546554]]
+Reprojection error (after LM optimization) Mean: 2.5117064573368877, Variance: 1.332346984473193
+Image: 7.jpg
+Rotation Matrix (without LM):
+[[ 0.99886789 -0.00173778  0.04753852]
+ [ 0.03055489  0.78937045 -0.61315634]
+ [-0.03645997  0.61391471  0.7885299 ]]
+Translation Vector (without LM):
+[[-98.90414864]
+ [-51.60290366]
+ [366.36454299]]
+Reprojection error (without LM) Mean: 2.4723884901783264, Variance: 1.1522895882260293
+Rotation Matrix (after LM optimization):
+[[ 0.99886789 -0.00173778  0.04753852]
+ [ 0.03055489  0.78937045 -0.61315634]
+ [-0.03645997  0.61391471  0.7885299 ]]
+Translation Vector (after LM optimization):
+[[-98.90414864]
+ [-51.60290366]
+ [366.36454299]]
+Reprojection error (after LM optimization) Mean: 2.4724220273676147, Variance: 1.152447914765549
+Image: 8.jpg
+Rotation Matrix (without LM):
+[[ 0.99845308  0.0198932   0.05192017]
+ [ 0.00971631  0.85700762 -0.51521212]
+ [-0.0547452   0.5149196   0.85548861]]
+Translation Vector (without LM):
+[[-107.40031557]
+ [-102.17511076]
+ [ 376.19074849]]
+Reprojection error (without LM) Mean: 1.586176405441985, Variance: 0.43065837352060665
+Rotation Matrix (after LM optimization):
+[[ 0.99845308  0.0198932   0.05192017]
+ [ 0.00971631  0.85700762 -0.51521212]
+ [-0.0547452   0.5149196   0.85548861]]
+Translation Vector (after LM optimization):
+[[-107.40031557]
+ [-102.17511076]
+ [ 376.19074849]]
+Reprojection error (after LM optimization) Mean: 1.5861121121700563, Variance: 0.4306402792047588
+Image: 9.jpg
+Rotation Matrix (without LM):
+[[ 0.99771416  0.02591333  0.06240955]
+ [-0.0570656   0.81774638  0.57274285]
+ [-0.03619351 -0.5749951   0.8173559 ]]
+Translation Vector (without LM):
+[[-111.88235095]
+ [-189.57881491]
+ [ 484.78165347]]
+Reprojection error (without LM) Mean: 1.4613341175375372, Variance: 0.7685267648781418
+Rotation Matrix (after LM optimization):
+[[ 0.99789133  0.03072721  0.05717291]
+ [-0.05813098  0.81493235  0.57663338]
+ [-0.02887372 -0.57874096  0.81500013]]
+Translation Vector (after LM optimization):
+[[-111.88188661]
+ [-189.57875946]
+ [ 484.78160685]]
+Reprojection error (after LM optimization) Mean: 1.0314860328520365, Variance: 0.4534326274417555
+
+Mean Error: 1.7684077947339376 (without optimization)
+Error Variance: 0.5305846665572558 (without optimization)
+
+Mean Error: 1.746898212294822 (after LM optimization)
+Error Variance: 0.552598928636785 (after LM optimization)
+
+
