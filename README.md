@@ -131,6 +131,7 @@ Implement Zhang's Algorithm to find the Intrinsic and Extrinsic camera calibrati
 
 **Sample Input:**
 
+![](homework8/extra_files/Pic_1_tiny.jpg)
 
 
 
