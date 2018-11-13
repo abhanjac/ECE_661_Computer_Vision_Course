@@ -129,6 +129,7 @@ Implement Zhang's Algorithm to find the Intrinsic and Extrinsic camera calibrati
 
 [hw8_report](homework8/REPORT)
 
+**Sample Input:**
 
 
 
