@@ -145,5 +145,7 @@ The focus of this assignment is projective reconstruction of a scene using stere
 
 [hw9_problem_statement](homework9/PROBLEM_STATEMENT)
 
+[hw9_report](homework9/REPORT)
+
 
 
