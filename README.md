@@ -143,5 +143,7 @@ Implement Zhang's Algorithm to find the Intrinsic and Extrinsic camera calibrati
 
 The focus of this assignment is projective reconstruction of a scene using stereo images. What we obtain from projective reconstruction might appear distorted when compared to the actual scene.
 
+[hw9_problem_statement](homework9/PROBLEM_STATEMENT)
+
 
 
