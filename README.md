@@ -167,6 +167,8 @@ The first part of the homework is about face recognition with PCA and LDA for di
 
 [hw10_report](homework10_part1/REPORT)
 
+**Sample Input:**
+
 
 
 
