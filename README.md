@@ -165,8 +165,6 @@ The first part of the homework is about face recognition with PCA and LDA for di
 
 [hw10_problem_statement](homework10_part1/PROBLEM_STATEMENT)
 
-[hw10_report](homework10_part1/REPORT)
-
 **Sample Input:**
 
 The actual images used for this homework is not uploaded as they were from a non-public dataset, but the feature vectors created from them are shared in this repository.
