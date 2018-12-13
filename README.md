@@ -161,6 +161,8 @@ The focus of this assignment is projective reconstruction of a scene using stere
 
 #### Homework 10 Part 1:
 
+The first part of the homework is about face recognition with PCA and LDA for dimensionality reduction and KNN for classification.
+
 
 
 
