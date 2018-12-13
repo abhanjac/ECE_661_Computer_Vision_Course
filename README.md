@@ -179,6 +179,8 @@ The 30 classes were the faces of 30 different persons. Each class had 21 images 
 
 **Sample Output:**
 
+![](homework10_part1/extra_files/1_tiny.png)
+
 
 
 
