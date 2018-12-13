@@ -175,6 +175,10 @@ Total number of **Training** Samples:   **630** images, **30** classes, **21** i
 
 Total number of **Testing** Samples:   **630** images, **30** classes, **21** image in each class. Size of each image is **128 x 128** pixels.
 
+The 30 classes were the faces of 30 different persons. Each class had 21 images of the front face of the person, taken under different lighting conditions.
+
+**Sample Output:**
+
 
 
 
