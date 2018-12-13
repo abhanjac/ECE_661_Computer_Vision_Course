@@ -169,6 +169,8 @@ The first part of the homework is about face recognition with PCA and LDA for di
 
 **Sample Input:**
 
+The actual images used for this homework is not uploaded as they were from a non-public dataset, but the feature vectors created from them are shared in this repository.
+
 Total number of **Training** Samples:   **630** images, **30** classes, **21** image in each class. Size of each image is **128 x 128** pixels.
 
 Total number of **Testing** Samples:   **630** images, **30** classes, **21** image in each class. Size of each image is **128 x 128** pixels.
