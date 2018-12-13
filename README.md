@@ -173,6 +173,8 @@ The actual images used for this homework is not uploaded as they were from a non
 
 Total number of **Training** Samples:   **630** images, **30** classes, **21** image in each class. Size of each image is **128 x 128** pixels.
 
+Total number of **Testing** Samples:   **630** images, **30** classes, **21** image in each class. Size of each image is **128 x 128** pixels.
+
 
 
 
