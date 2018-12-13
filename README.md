@@ -159,6 +159,8 @@ The focus of this assignment is projective reconstruction of a scene using stere
 
 ---
 
+#### Homework 10 Part 1:
+
 
 
 
