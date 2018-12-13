@@ -181,6 +181,8 @@ The 30 classes were the faces of 30 different persons. Each class had 21 images 
 
 ![](homework10_part1/extra_files/1_tiny.png)
 
+---
+
 
 
 
