@@ -1,0 +1,16 @@
+FPR for cascade 1 during testing:  0.089
+FNR for cascade 1 during testing:  0.152
+FPR for cascade 2 during testing:  0.018
+FNR for cascade 2 during testing:  0.202
+FPR for cascade 3 during testing:  0.014
+FNR for cascade 3 during testing:  0.236
+FPR for cascade 4 during testing:  0.005
+FNR for cascade 4 during testing:  0.281
+FPR for cascade 5 during testing:  0.002
+FNR for cascade 5 during testing:  0.320
+FPR for cascade 6 during testing:  0.002
+FNR for cascade 6 during testing:  0.365
+FPR for cascade 7 during testing:  0.002
+FNR for cascade 7 during testing:  0.365
+
+
