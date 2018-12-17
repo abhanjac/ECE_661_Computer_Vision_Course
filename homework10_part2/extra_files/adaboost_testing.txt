@@ -13,4 +13,3 @@ FNR for cascade 6 during testing:  0.365
 FPR for cascade 7 during testing:  0.002
 FNR for cascade 7 during testing:  0.365
 
-
