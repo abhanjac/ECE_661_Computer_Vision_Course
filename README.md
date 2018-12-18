@@ -194,6 +194,8 @@ The actual images used for this homework is not uploaded as they were from a non
 
 **Sample Input:**
 
+The actual images used for this homework is not uploaded as they were from a non-public dataset, but the feature vectors created from them are shared in this repository.
+
 
 
 
