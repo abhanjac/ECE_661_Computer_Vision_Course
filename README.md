@@ -185,6 +185,9 @@ The 30 classes were the faces of 30 different persons. Each class had 21 images 
 
 #### Homework 10 Part 2:
 
+The second part of the homework is about classifying images of cars from non-car images using HAAR cascade classifier created using ADABOOST algorithm.
+The actual images used for this homework is not uploaded as they were from a non-public dataset, but the feature vectors created from them are shared in this repository.
+
 
 
 
