@@ -198,6 +198,8 @@ The actual images used for this homework is not uploaded as they were from a non
 
 Total number of **Training** Samples:   **710** positive and **1758** negative images, **2** classes (cars and non-cars). Size of each image is **20 x 40** pixels. 
 
+Total number of **Testing** Samples:   **178** positive and **440** negative images, **2** classes (cars and non-cars). Size of each image is **20 x 40** pixels.
+
 
 
 
