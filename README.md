@@ -200,6 +200,8 @@ Total number of **Training** Samples:   **710** positive and **1758** negative i
 
 Total number of **Testing** Samples:   **178** positive and **440** negative images, **2** classes (cars and non-cars). Size of each image is **20 x 40** pixels.
 
+**Sample Output:**
+
 
 
 
