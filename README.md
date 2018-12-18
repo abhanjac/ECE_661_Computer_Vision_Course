@@ -192,6 +192,8 @@ The actual images used for this homework is not uploaded as they were from a non
 
 [hw10_report](homework10_part2/REPORT)
 
+**Sample Input:**
+
 
 
 
