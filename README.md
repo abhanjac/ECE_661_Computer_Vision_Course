@@ -202,6 +202,10 @@ Total number of **Testing** Samples:   **178** positive and **440** negative ima
 
 **Sample Output:**
 
+![](homework10_part2/extra_files/1_tiny.png)    ![](homework10_part2/extra_files/2_tiny.png)
+
+---
+
 
 
 
