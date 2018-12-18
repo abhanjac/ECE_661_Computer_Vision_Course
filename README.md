@@ -196,6 +196,8 @@ The actual images used for this homework is not uploaded as they were from a non
 
 The actual images used for this homework is not uploaded as they were from a non-public dataset, but the feature vectors created from them are shared in this repository.
 
+Total number of **Training** Samples:   **710** positive and **1758** negative images, **2** classes (cars and non-cars). Size of each image is **20 x 40** pixels. 
+
 
 
 
