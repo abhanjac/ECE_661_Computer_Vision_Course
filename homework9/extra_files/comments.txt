@@ -1,0 +1,49 @@
+Formula to calculate H2:
+
+#% For H2
+#ang=atan(-(ep(2)-ht/2)/(ep(1)-wid/2));
+#f=cos(ang)*(ep(1)-wid/2)-sin(ang)*(ep(2)-ht/2);
+#R=[cos(ang),-sin(ang),0;sin(ang),cos(ang),0; 0,0,1];
+#T=[1,0,-wid/2;0,1,-ht/2;0,0,1];
+#G=[1,0,0;0,1,0;-1/f,0,1];
+#H2=G*R*T;
+#% keeping the center point in the image as constant
+#c_pt=[wid/2;ht/2;1];
+#c_pt_new=H2*c_pt;
+#c_pt_new=c_pt_new/c_pt_new(3);
+#T2=[1,0,wid/2-c_pt_new(1);0,1,ht/2-c_pt_new(2);0,0,1];
+#H2=T2*H2;
+
+Formula to calculate H2:
+
+#% For H1
+#ang=atan(-(e(2)-ht/2)/(e(1)-wid/2));
+#f=cos(ang)*(e(1)-wid/2)-sin(ang)*(e(2)-ht/2);
+#R=[cos(ang),-sin(ang),0;sin(ang),cos(ang),0; 0,0,1];
+#T=[1,0,-wid/2;0,1,-ht/2;0,0,1];
+#G=[1,0,0;0,1,0;-1/f,0,1];
+#H1=G*R*T;
+#% keeping the center point in the image as constant
+#c_pt=[wid/2;ht/2;1];
+#c_pt_new=H1*c_pt;
+#c_pt_new=c_pt_new/c_pt_new(3);
+#T1=[1,0,wid/2-c_pt_new(1);0,1,ht/2-c_pt_new(2);0,0,1];
+#H1=T1*H1;
+
+F:
+[[-1.57682070e-04 -3.41134426e-03  3.48395119e-01]
+ [ 3.39610477e-03 -3.56157544e-04  1.51847974e-01]
+ [-3.31703359e-01 -1.17888499e-01  1.00000000e+00]]
+H2:
+[[ 5.37587394e+00 -6.96203978e-01 -2.42726381e+02]
+ [ 1.68292125e+00  2.92589204e+00 -2.04770290e+02]
+ [ 1.75684020e-02 -2.27520056e-03  1.00000000e+00]]
+H1:
+[[ 5.57023659e+00 -1.04349705e+00 -2.34040351e+02]
+ [ 1.95682232e+00  2.87276982e+00 -2.31669839e+02]
+ [ 1.87747278e-02 -3.51715280e-03  1.00000000e+00]]
+Matching the sizes of the rectified images.
+Number of keypoints detected using Sift in 3.jpg: 107
+Number of keypoints detected using Sift in 4.jpg: 100
+Number of matches found among keypoints from 3.jpg and 4.jpg: 78
+Number of good matches: 19

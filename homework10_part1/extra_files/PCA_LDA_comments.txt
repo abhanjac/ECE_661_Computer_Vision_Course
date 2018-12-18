@@ -1,0 +1,35 @@
+PCA:
+
+Accuracy with p = 1 and 1 neighbors in KNN: 26.666666666666668 %
+Accuracy with p = 2 and 1 neighbors in KNN: 78.41269841269842 %
+Accuracy with p = 3 and 1 neighbors in KNN: 93.96825396825396 %
+Accuracy with p = 4 and 1 neighbors in KNN: 96.66666666666667 %
+Accuracy with p = 5 and 1 neighbors in KNN: 98.88888888888889 %
+Accuracy with p = 6 and 1 neighbors in KNN: 98.57142857142858 %
+Accuracy with p = 7 and 1 neighbors in KNN: 99.04761904761905 %
+Accuracy with p = 8 and 1 neighbors in KNN: 99.52380952380952 %
+Accuracy with p = 9 and 1 neighbors in KNN: 99.68253968253968 %
+Accuracy with p = 10 and 1 neighbors in KNN: 99.84126984126985 %
+Accuracy with p = 11 and 1 neighbors in KNN: 99.84126984126985 %
+Accuracy with p = 12 and 1 neighbors in KNN: 99.84126984126985 %
+Accuracy with p = 13 and 1 neighbors in KNN: 100.0 %
+Accuracy with p = 14 and 1 neighbors in KNN: 100.0 %
+
+LDA:
+
+Accuracy with p = 1 and 1 neighbors in KNN: 33.65079365079365 %
+Accuracy with p = 2 and 1 neighbors in KNN: 84.28571428571429 %
+Accuracy with p = 3 and 1 neighbors in KNN: 95.23809523809523 %
+Accuracy with p = 4 and 1 neighbors in KNN: 99.04761904761905 %
+Accuracy with p = 5 and 1 neighbors in KNN: 100.0 %
+Accuracy with p = 6 and 1 neighbors in KNN: 100.0 %
+Accuracy with p = 7 and 1 neighbors in KNN: 100.0 %
+Accuracy with p = 8 and 1 neighbors in KNN: 100.0 %
+Accuracy with p = 9 and 1 neighbors in KNN: 100.0 %
+Accuracy with p = 10 and 1 neighbors in KNN: 100.0 %
+Accuracy with p = 11 and 1 neighbors in KNN: 100.0 %
+Accuracy with p = 12 and 1 neighbors in KNN: 100.0 %
+Accuracy with p = 13 and 1 neighbors in KNN: 100.0 %
+Accuracy with p = 14 and 1 neighbors in KNN: 100.0 %
+
+
